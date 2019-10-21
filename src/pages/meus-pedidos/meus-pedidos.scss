@@ -1,0 +1,16 @@
+page-meus-pedidos {
+    .item {
+        border-bottom: 2px solid darkred !important;
+        align-content: center
+    }
+    .ion-content {
+        background: #F8F8F8 !important;
+        margin-block-end: 20px !important;
+    }
+    .scroll-content {
+        margin-inline-end: 20px !important;
+    }
+    .ion-card-header {
+        font-weight: bold;
+    }
+}
