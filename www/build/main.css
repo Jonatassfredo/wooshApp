@@ -28046,6 +28046,7 @@ ion-navbar.toolbar {
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
   padding: 10px;
   overflow: auto;
+  border-radius: 10px;
 }
 
 .produtos .produto .titulo {
@@ -28142,7 +28143,11 @@ page-cadastro ion-input {
 }
 
 page-cadastro .botao {
-  margin: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+  width: 200px;
 }
 
 page-carrinho ion-content {
@@ -28267,9 +28272,11 @@ page-login ion-input {
 }
 
 page-login .botao {
-  margin-left: 20%;
-  margin-right: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: 45px;
+  width: 200px;
 }
 
 page-login .rodapeLogo {
@@ -28281,6 +28288,15 @@ page-login .rodapeLogo {
 
 page-login .logo {
   margin-bottom: 50px;
+}
+
+page-login .cadastroQuest {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 page-mensagens .alinhaMsg {
@@ -28318,7 +28334,6 @@ page-mensagens .fontsize {
 }
 
 page-meus-pedidos .item {
-  border-bottom: 2px solid darkred !important;
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
@@ -28326,13 +28341,6 @@ page-meus-pedidos .item {
 
 page-meus-pedidos .ion-content {
   background: #F8F8F8 !important;
-  -webkit-margin-after: 20px !important;
-  margin-block-end: 20px !important;
-}
-
-page-meus-pedidos .scroll-content {
-  -webkit-margin-end: 20px !important;
-  margin-inline-end: 20px !important;
 }
 
 page-meus-pedidos .ion-card-header {

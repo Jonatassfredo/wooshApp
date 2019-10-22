@@ -1,6 +1,6 @@
 webpackJsonp([14],{
 
-/***/ 310:
+/***/ 311:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdmCategoriasPageModule", function() { return AdmCategoriasPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__adm_categorias__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__adm_categorias__ = __webpack_require__(338);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var AdmCategoriasPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 337:
+/***/ 338:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -122,7 +122,7 @@ var AdmCategoriasPage = /** @class */ (function () {
     };
     AdmCategoriasPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-adm-categorias",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\deploy\wooshApp\src\pages\adm-categorias\adm-categorias.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Categorias</ion-title>\n        <ion-buttons right>\n            <button ion-button icon-only (click)="addOrEdit({})">\n        <ion-icon name="add"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list lines>\n        <ion-item text-wrap *ngIf="lista.length == 0">\n            Você não tem nenhuma categoria cadastrada.\n        </ion-item>\n        <ion-item *ngFor="let item of lista" text-wrap (click)="addOrEdit(item)">\n            {{ item.titulo }}\n        </ion-item>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"E:\Desenvolvimento\TCC\deploy\wooshApp\src\pages\adm-categorias\adm-categorias.html"*/
+            selector: "page-adm-categorias",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\adm-categorias\adm-categorias.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Categorias</ion-title>\n        <ion-buttons right>\n            <button ion-button icon-only (click)="addOrEdit({})">\n        <ion-icon name="add"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list lines>\n        <ion-item text-wrap *ngIf="lista.length == 0">\n            Você não tem nenhuma categoria cadastrada.\n        </ion-item>\n        <ion-item *ngFor="let item of lista" text-wrap (click)="addOrEdit(item)">\n            {{ item.titulo }}\n        </ion-item>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\adm-categorias\adm-categorias.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],

@@ -20,6 +20,7 @@ export class CarrinhoPage {
   totalProdutos: number = 0.0;
   carrinho: CarrinhoModel = new CarrinhoModel();
   enderecos: Array<EnderecoEntregaModel> = new Array<EnderecoEntregaModel>();
+  formaPagamento = ["Dinheiro", "Cartão de Crédito"];
 
   constructor(
     public navCtrl: NavController,

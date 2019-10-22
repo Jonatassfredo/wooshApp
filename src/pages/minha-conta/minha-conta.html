@@ -3,9 +3,9 @@
         <ion-title class="titulo">Minha Conta</ion-title>
         <ion-buttons end>
             <button ion-button icon-only (click)="sair()">
-                <p class="sair">Sair</p>
-                <ion-icon name="exit"></ion-icon>
-            </button>
+        <p class="sair">Sair</p>
+        <ion-icon name="exit"></ion-icon>
+      </button>
         </ion-buttons>
     </ion-navbar>
 </ion-header>
@@ -21,20 +21,23 @@
         <input type="text" placeholder="Email" [(ngModel)]="usuarioLogado.email">
         <p>CPF</p>
         <input type="number" placeholder="CPF" [(ngModel)]="usuarioLogado.cpf" disabled="true">
-        <P>Telefone</P>
-        <input type="number" placeholder="Telefone" [(ngModel)]="usuarioLogado.telefone">
+        <!-- <P>Telefone</P>
+        <input type="number" placeholder="Telefone" [(ngModel)]="usuarioLogado.telefone"> -->
 
         <div class="botaoEndereco">
-            <button ion-button outline color="primary" round block (click)="adicionarEndereco()">
-                Endereços de entrega
-            </button>
+            <button ion-button outline color="primary" round block (click)="adicionarEndereco()" style="margin-top: 20px;">
+        Endereços de entrega
+      </button>
         </div>
         <div class="botao">
-            <button ion-button outline color="primary" round block (click)="salvar()">
-                Salvar os dados
-            </button>
+            <button ion-button outline color="primary" round block (click)="salvar()" style="margin-top: 20px;">
+        Salvar os dados
+      </button>
         </div>
-
+    </div>
+    <div>
+        <ion-item no-lines style="background-color: transparent !important;"></ion-item>
+        <ion-item no-lines style="background-color: transparent !important;"></ion-item>
     </div>
 </ion-content>
 <tab [pagina]="'Minha Conta'"></tab>

@@ -3,9 +3,11 @@ page-login {
         color: white
     }
     .botao {
-        margin-left: 20%;
-        margin-right: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         height: 45px;
+        width: 200px;
     }
     .rodapeLogo {
         display: block;
@@ -15,5 +17,13 @@ page-login {
     }
     .logo {
         margin-bottom: 50px;
+    }
+    .cadastroQuest {
+        color: white;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 15px;
     }
 }
