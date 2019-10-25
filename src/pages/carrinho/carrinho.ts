@@ -20,7 +20,7 @@ export class CarrinhoPage {
   totalProdutos: number = 0.0;
   carrinho: CarrinhoModel = new CarrinhoModel();
   enderecos: Array<EnderecoEntregaModel> = new Array<EnderecoEntregaModel>();
-  formaPagamento = ["Dinheiro", "Cartão de Crédito"];
+  formaPagamento = ["Dinheiro", "Cartão de Crédito/Débito"];
 
   constructor(
     public navCtrl: NavController,
@@ -39,6 +39,7 @@ export class CarrinhoPage {
         this.enderecos = <Array<EnderecoEntregaModel>>(
           enderecoEntregaResult.data
         );
+        console.log("enderecos", this.enderecos);
       }
     } catch (error) {
       console.log("Erro ao carregar os endereços", error);
@@ -64,6 +65,8 @@ export class CarrinhoPage {
         "Deseja concluir seu pedido?",
         async () => {
           let pedidoResult = await this.carrinhoSrv.SalvarPedido(this.carrinho);
+          console.log("meu carinho", this.carrinho);
+
           if (pedidoResult.success) {
             this.carrinho.valorTotal = 0;
             this.carrinho.itens = [];

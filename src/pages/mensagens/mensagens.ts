@@ -1,4 +1,4 @@
-import { MeusPedidosPage } from "./../meus-pedidos/meus-pedidos";
+import { MinhaContaPage } from "./../minha-conta/minha-conta";
 import { Component, ViewChild } from "@angular/core";
 import { IonicPage, NavController, NavParams, Content } from "ionic-angular";
 import { UsuarioModel } from "./../../app/models/usuarioModel";
@@ -111,7 +111,7 @@ export class MensagensPage {
   }
 
   sair() {
-    this.navCtrl.setRoot(MeusPedidosPage);
+    this.navCtrl.setRoot(MinhaContaPage);
   }
 
   // sair() {

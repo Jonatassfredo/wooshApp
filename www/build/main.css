@@ -28397,13 +28397,40 @@ page-minha-conta .imagem {
 }
 
 page-minha-conta .botao {
-  width: calc(100% - 20px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+  width: 200px;
   bottom: 60px;
 }
 
 page-minha-conta .botaoEndereco {
-  width: calc(100% - 20px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+  width: 200px;
   bottom: 100px;
+}
+
+page-minha-conta .btnSuporte {
+  margin-left: 80%;
+  margin-top: -20%;
+  margin-bottom: 0%;
+}
+
+page-minha-conta .btnMsg {
+  width: 50px;
+  height: 50px;
+}
+
+page-minha-conta .suporte {
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #700000;
+  margin-top: 0%;
 }
 
 page-produtos ion-content {

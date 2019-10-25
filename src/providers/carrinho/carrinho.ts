@@ -1,5 +1,6 @@
 import { HttpProvider } from "./../http/http";
 import { CarrinhoItemModel } from "./../../app/models/CarrinhoItemModel";
+import { EnderecoEntregaModel } from "./../../app/models/enderecoModel";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs/Observable";
 import { ProdutoModel } from "../../app/models/produtoModel";
@@ -19,6 +20,7 @@ export class CarrinhoProvider {
     this._carrinho.datahora = new Date();
     this._carrinho.itens = new Array<CarrinhoItemModel>();
     this._carrinho.valorTotal = 0.0;
+    this._carrinho.enderecoEntrega = new Array<EnderecoEntregaModel>();
 
     //Inicializando nosso observable
     this.carrinho = Observable.create(obs => {
@@ -86,8 +88,25 @@ export class CarrinhoProvider {
     let _pedido: any = {};
     _pedido.valorTotal = pedido.valorTotal;
     _pedido.itens = [];
-    _pedido.enderecoEntregaId = pedido.enderecoEntregaId;
     _pedido.formaPagamento = pedido.formaPagamento;
+    _pedido.enderecoEntregaId = pedido.enderecoEntregaId;
+    _pedido.enderecoEntrega = pedido.enderecoEntrega;
+
+    console.log("endereco inteiro", _pedido.enderecoEntrega);
+
+    // pedido.enderecoEntrega.forEach(ender => {
+    //   _pedido.enderecoEntrega.push({
+    //     cidade: ender.cidade,
+    //     bairro: ender.bairro,
+    //     rua: ender.rua,
+    //     numero: ender.numero,
+    //     cep: ender.cep,
+    //     orientacoes: ender.orientacoes,
+    //     pontoReferencia: ender.pontoReferencia,
+    //     uf: ender.uf
+    //   });
+    // });
+    // _pedido.enderecoEntrega = JSON.stringify(_pedido.enderecoEntrega);
 
     pedido.itens.forEach(prod => {
       _pedido.itens.push({
@@ -96,6 +115,8 @@ export class CarrinhoProvider {
         observacoes: prod.Observacoes
       });
     });
+    console.log("pedido", _pedido);
+
     _pedido.itens = JSON.stringify(_pedido.itens);
     return this.http.post(`${ConfigHelper.Url}pedido`, _pedido);
   }

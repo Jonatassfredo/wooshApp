@@ -5,6 +5,7 @@ import { CameraProvider } from "./../../providers/camera/camera";
 import { ConfigHelper } from "./../../app/helpers/configHelper";
 import { UsuarioProvider } from "./../../providers/usuario/usuario";
 import { Component } from "@angular/core";
+import { MensagensPage } from "../mensagens/mensagens";
 import {
   IonicPage,
   NavController,
@@ -31,6 +32,10 @@ export class MinhaContaPage {
 
   ionViewDidLoad() {
     this.LoadData();
+  }
+
+  mensagens() {
+    this.navCtrl.setRoot(MensagensPage);
   }
 
   sair() {
@@ -103,7 +108,7 @@ export class MinhaContaPage {
     } catch (error) {
       console.log("Problema ao carregar os dados do usuário");
     }
-     console.log("telefone", this.usuarioLogado.telefone);
+    console.log("telefone", this.usuarioLogado.telefone);
   }
 
   //fazer tela de cadastro de endereço de entrega
