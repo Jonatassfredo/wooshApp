@@ -28150,6 +28150,15 @@ page-cadastro .botao {
   width: 200px;
 }
 
+page-cadastro .logo {
+  margin-bottom: 50px;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 page-carrinho ion-content {
   background: #F8F8F8 !important;
 }
@@ -28288,6 +28297,11 @@ page-login .rodapeLogo {
 
 page-login .logo {
   margin-bottom: 50px;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 page-login .cadastroQuest {
