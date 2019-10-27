@@ -7,7 +7,7 @@
     <ion-card *ngFor="let item of lista" style="border-radius: 10px;">
         <ion-card-header icon-left>
             <ion-icon name="cart"></ion-icon>
-            Pedido realizado em {{ item.dataPedido | date:'dd/MM/yyyy' }}
+            Pedido realizado em {{ item.dataPedido | date:'dd/MM/yyyy, HH:mm' }}
         </ion-card-header>
         <ion-card-content>
             <p>Você comprou {{ contaItem(item) }} produtos neste dia.</p>

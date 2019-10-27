@@ -274,15 +274,15 @@ var map = {
 		13
 	],
 	"../pages/cad-endereco-entrega/cad-endereco-entrega.module": [
-		315,
+		313,
 		7
 	],
 	"../pages/cadastro/cadastro.module": [
-		313,
+		314,
 		12
 	],
 	"../pages/carrinho/carrinho.module": [
-		314,
+		315,
 		0
 	],
 	"../pages/categoria/categoria.module": [
@@ -302,15 +302,15 @@ var map = {
 		15
 	],
 	"../pages/meus-pedidos/meus-pedidos.module": [
-		320,
+		322,
 		2
 	],
 	"../pages/minha-conta/minha-conta.module": [
-		321,
+		320,
 		5
 	],
 	"../pages/produtos/produtos.module": [
-		322,
+		321,
 		1
 	],
 	"../pages/tab-categoria/tab-categoria.module": [
@@ -1079,16 +1079,16 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/adm-categorias/adm-categorias.module#AdmCategoriasPageModule', name: 'AdmCategoriasPage', segment: 'adm-categorias', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/adm-produto/adm-produto.module#AdmProdutoPageModule', name: 'AdmProdutoPage', segment: 'adm-produto', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/adm-produtos/adm-produtos.module#AdmProdutosPageModule', name: 'AdmProdutosPage', segment: 'adm-produtos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/cad-endereco-entrega/cad-endereco-entrega.module#CadEnderecoEntregaPageModule', name: 'CadEnderecoEntregaPage', segment: 'cad-endereco-entrega', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/carrinho/carrinho.module#CarrinhoPageModule', name: 'CarrinhoPage', segment: 'carrinho', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/cad-endereco-entrega/cad-endereco-entrega.module#CadEnderecoEntregaPageModule', name: 'CadEnderecoEntregaPage', segment: 'cad-endereco-entrega', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/categoria/categoria.module#CategoriaPageModule', name: 'CategoriaPage', segment: 'categoria', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/list-enderecos-entrega/list-enderecos-entrega.module#ListEnderecosEntregaPageModule', name: 'ListEnderecosEntregaPage', segment: 'list-enderecos-entrega', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mensagens/mensagens.module#MensagensPageModule', name: 'MensagensPage', segment: 'mensagens', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/meus-pedidos/meus-pedidos.module#MeusPedidosPageModule', name: 'MeusPedidosPage', segment: 'meus-pedidos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/minha-conta/minha-conta.module#MinhaContaPageModule', name: 'MinhaContaPage', segment: 'minha-conta', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/produtos/produtos.module#ProdutosPageModule', name: 'ProdutosPage', segment: 'produtos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/meus-pedidos/meus-pedidos.module#MeusPedidosPageModule', name: 'MeusPedidosPage', segment: 'meus-pedidos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tab-categoria/tab-categoria.module#TabCategoriaPageModule', name: 'TabCategoriaPage', segment: 'tab-categoria', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/visualizar-produto/visualizar-produto.module#VisualizarProdutoPageModule', name: 'VisualizarProdutoPage', segment: 'visualizar-produto', priority: 'low', defaultHistory: [] }
                     ]
