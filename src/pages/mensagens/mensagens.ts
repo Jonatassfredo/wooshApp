@@ -1,9 +1,9 @@
-import { MinhaContaPage } from "./../minha-conta/minha-conta";
 import { Component, ViewChild } from "@angular/core";
 import { IonicPage, NavController, NavParams, Content } from "ionic-angular";
 import { UsuarioModel } from "./../../app/models/usuarioModel";
 import * as firebase from "Firebase";
 import { UsuarioProvider } from "../../providers/usuario/usuario";
+import { CarrinhoPage } from './../carrinho/carrinho';
 
 @IonicPage()
 @Component({
@@ -79,7 +79,7 @@ export class MensagensPage {
   }
 
   sair() {
-    this.navCtrl.setRoot(MinhaContaPage);
+    this.navCtrl.setRoot(CarrinhoPage);
   }
 }
 

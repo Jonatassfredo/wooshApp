@@ -1,14 +1,14 @@
 webpackJsonp([11],{
 
-/***/ 317:
+/***/ 315:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListEnderecosEntregaPageModule", function() { return ListEnderecosEntregaPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CadastroPageModule", function() { return CadastroPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_enderecos_entrega__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cadastro__ = __webpack_require__(340);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ListEnderecosEntregaPageModule = /** @class */ (function () {
-    function ListEnderecosEntregaPageModule() {
+var CadastroPageModule = /** @class */ (function () {
+    function CadastroPageModule() {
     }
-    ListEnderecosEntregaPageModule = __decorate([
+    CadastroPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__list_enderecos_entrega__["a" /* ListEnderecosEntregaPage */],
+                __WEBPACK_IMPORTED_MODULE_2__cadastro__["a" /* CadastroPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__list_enderecos_entrega__["a" /* ListEnderecosEntregaPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__cadastro__["a" /* CadastroPage */]),
             ],
         })
-    ], ListEnderecosEntregaPageModule);
-    return ListEnderecosEntregaPageModule;
+    ], CadastroPageModule);
+    return CadastroPageModule;
 }());
 
-//# sourceMappingURL=list-enderecos-entrega.module.js.map
+//# sourceMappingURL=cadastro.module.js.map
 
 /***/ }),
 
-/***/ 344:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListEnderecosEntregaPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_endereco_endereco__ = __webpack_require__(223);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadastroPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_alert_alert__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_usuario_usuario__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_models_usuarioModel__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(20);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -93,45 +95,49 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
-var ListEnderecosEntregaPage = /** @class */ (function () {
-    function ListEnderecosEntregaPage(navCtrl, navParams, enderecoSrv) {
+
+
+var CadastroPage = /** @class */ (function () {
+    function CadastroPage(navCtrl, navParams, usuarioSrv, alertSrv) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.enderecoSrv = enderecoSrv;
-        this.lista = new Array();
-        this._loadData();
+        this.usuarioSrv = usuarioSrv;
+        this.alertSrv = alertSrv;
+        this.usuario = new __WEBPACK_IMPORTED_MODULE_2__app_models_usuarioModel__["a" /* UsuarioModel */]();
     }
-    ListEnderecosEntregaPage.prototype._loadData = function () {
+    CadastroPage.prototype.cadastrar = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var enderecoResult;
+            var cadastroResult;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.enderecoSrv.get()];
+                    case 0: return [4 /*yield*/, this.usuarioSrv.register(this.usuario)];
                     case 1:
-                        enderecoResult = _a.sent();
-                        if (enderecoResult.success) {
-                            this.lista = enderecoResult.data;
+                        cadastroResult = _a.sent();
+                        if (cadastroResult.success) {
+                            this.alertSrv.toast('Cadastro realizado com sucesso!', 'bottom');
+                            this.navCtrl.setRoot('LoginPage');
                         }
                         return [2 /*return*/];
                 }
             });
         });
     };
-    ListEnderecosEntregaPage.prototype.addOrEdit = function (model) {
-        this.navCtrl.push("CadEnderecoEntregaPage", { _endereco: model });
+    CadastroPage.prototype.cancelar = function () {
+        this.navCtrl.setRoot('LoginPage');
     };
-    ListEnderecosEntregaPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-list-enderecos-entrega",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\list-enderecos-entrega\list-enderecos-entrega.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Endereços de Entrega</ion-title>\n        <ion-buttons right>\n            <button ion-button icon-only (click)="addOrEdit({})">\n        <ion-icon name="add"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list lines>\n        <ion-item text-wrap *ngIf="lista.length == 0">\n            Você não possui endereço de entrega cadastrado.\n        </ion-item>\n        <ion-item *ngFor="let item of lista" text-wrap (click)="addOrEdit(item)">\n            Rua {{item.rua}}, {{item.numero}}, Bairro {{item.bairro}}\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\list-enderecos-entrega\list-enderecos-entrega.html"*/
+    CadastroPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
+            selector: 'page-cadastro',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cadastro\cadastro.html"*/'<ion-content padding class="backImage">\n  <div>\n    <img src="assets/imagens/logo.png" class="logo">\n    <!-- <span>Woosh</span> -->\n  </div>\n  <ion-list no-lines class="list-transparent">\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.nome" type="text" placeholder="Nome"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.email" type="text" placeholder="E-mail"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.cpf" type="number" placeholder="CPF" #input maxlength="10"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.senha" type="password" placeholder="Senha"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.senhaConfirmacao" type="password" placeholder="Confirmar Senha"></ion-input>\n    </ion-item>\n  </ion-list>\n  <div>\n    <ion-grid>\n      <ion-row>\n        <button ion-button block round color="secondary" (click)="cadastrar()" class=\'botao\'>\n          Cadastrar\n        </button>\n      </ion-row>\n      <ion-row>\n        <button ion-button block outline round color="secondary" (click)="cancelar()" class=\'botao\'>\n          Cancelar\n        </button>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>\n'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cadastro\cadastro.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_endereco_endereco__["a" /* EnderecoEntregaProvider */]])
-    ], ListEnderecosEntregaPage);
-    return ListEnderecosEntregaPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["l" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1__providers_usuario_usuario__["a" /* UsuarioProvider */],
+            __WEBPACK_IMPORTED_MODULE_0__providers_alert_alert__["a" /* AlertProvider */]])
+    ], CadastroPage);
+    return CadastroPage;
 }());
 
-//# sourceMappingURL=list-enderecos-entrega.js.map
+//# sourceMappingURL=cadastro.js.map
 
 /***/ })
 
