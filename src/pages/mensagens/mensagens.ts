@@ -58,38 +58,6 @@ export class MensagensPage {
     console.log("mensagens", this.chats);
   }
 
-  // ionViewDidLoad() {
-  //   this.LoadData();
-  // }
-
-  // async LoadData(): Promise<void> {
-  //   try {
-  //     let user = <UsuarioModel>(
-  //       JSON.parse(localStorage.getItem(ConfigHelper.storageKeys.user))
-  //     );
-  //     let userResult = await this.usuarioSrv.getByUid(user._id);
-  //     if (userResult.success) {
-  //       this.nicknameModel = <UsuarioModel>userResult.data;
-  //     }
-  //     console.log("id no loaddata", this.nicknameModel._id);
-  //   } catch (error) {
-  //     console.log("Problema ao carregar os dados do usuário");
-  //   }
-  // }
-
-  // adicionarSala() {
-  //   let newData = this.ref.push();
-  //   newData.set({
-  //     nome: this.dataSala.nome
-  //   });
-  //   this.navCtrl.pop();
-  // }
-
-  // acessarNickname() {
-  //   this.navCtrl.setRoot(MensagensPage, {
-  //     nickname: this.dataNick.nickname
-  //   });
-  // }
 
   enviarMensagem() {
     if (this.data.mensagem === "") {
@@ -113,25 +81,6 @@ export class MensagensPage {
   sair() {
     this.navCtrl.setRoot(MinhaContaPage);
   }
-
-  // sair() {
-  //   let exitData = firebase
-  //     .database()
-  //     .ref("chats/teste")
-  //     .push();
-  //   exitData.set({
-  //     type: "sair",
-  //     user: this.nickname,
-  //     message: this.nickname + " saiu da sala de chat.",
-  //     sendDate: Date()
-  //   });
-
-  //   this.offStatus = true;
-
-  //   this.navCtrl.setRoot(CarrinhoPage, {
-  //     nickname: this.nickname
-  //   });
-  //}
 }
 
 export const snapshotToArray = snapshot => {

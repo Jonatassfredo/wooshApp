@@ -112,6 +112,7 @@ export class CarrinhoProvider {
       _pedido.itens.push({
         quantidade: prod.Quantidade,
         produtoId: prod.Produto._id,
+        nomeProd: prod.Produto.nome,
         observacoes: prod.Observacoes
       });
     });
