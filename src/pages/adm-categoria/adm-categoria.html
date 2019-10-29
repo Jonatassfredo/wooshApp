@@ -3,11 +3,11 @@
         <ion-title>Categoria</ion-title>
         <ion-buttons right>
             <button ion-button clear (click)="salvar()">
-        Salvar
-      </button>
+                Salvar
+            </button>
             <button *ngIf="categoria._id" ion-button icon-only (click)="excluir()">
-        <ion-icon name="trash"></ion-icon>
-      </button>
+                <ion-icon name="trash"></ion-icon>
+            </button>
         </ion-buttons>
     </ion-navbar>
 </ion-header>
@@ -23,9 +23,9 @@
         </ion-item>
         <ion-item text-center>
             <button ion-button clear (click)="getPictureOption()">
-        <ion-icon name="camera" item-left></ion-icon>
-        Selecionar Foto
-      </button>
+                <ion-icon name="camera" item-left></ion-icon>
+                Selecionar Foto
+            </button>
         </ion-item>
         <ion-item *ngIf="categoria.foto">
             <img [src]="categoria.foto">

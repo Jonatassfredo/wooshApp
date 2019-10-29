@@ -1,14 +1,14 @@
 webpackJsonp([10],{
 
-/***/ 319:
+/***/ 318:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListEnderecosEntregaPageModule", function() { return ListEnderecosEntregaPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_enderecos_entrega__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(344);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ListEnderecosEntregaPageModule = /** @class */ (function () {
-    function ListEnderecosEntregaPageModule() {
+var LoginPageModule = /** @class */ (function () {
+    function LoginPageModule() {
     }
-    ListEnderecosEntregaPageModule = __decorate([
+    LoginPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__list_enderecos_entrega__["a" /* ListEnderecosEntregaPage */],
+                __WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__list_enderecos_entrega__["a" /* ListEnderecosEntregaPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login__["a" /* LoginPage */]),
             ],
         })
-    ], ListEnderecosEntregaPageModule);
-    return ListEnderecosEntregaPageModule;
+    ], LoginPageModule);
+    return LoginPageModule;
 }());
 
-//# sourceMappingURL=list-enderecos-entrega.module.js.map
+//# sourceMappingURL=login.module.js.map
 
 /***/ }),
 
-/***/ 343:
+/***/ 344:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListEnderecosEntregaPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_endereco_endereco__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_usuario_usuario__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -93,45 +93,46 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
-var ListEnderecosEntregaPage = /** @class */ (function () {
-    function ListEnderecosEntregaPage(navCtrl, navParams, enderecoSrv) {
+var LoginPage = /** @class */ (function () {
+    function LoginPage(navCtrl, navParams, usuarioSrv) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.enderecoSrv = enderecoSrv;
-        this.lista = new Array();
-        this._loadData();
+        this.usuarioSrv = usuarioSrv;
+        this.form = {};
     }
-    ListEnderecosEntregaPage.prototype._loadData = function () {
+    LoginPage.prototype.login = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var enderecoResult;
+            var result;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.enderecoSrv.get()];
+                    case 0: return [4 /*yield*/, this.usuarioSrv.autenticate(this.form.email, this.form.senha)];
                     case 1:
-                        enderecoResult = _a.sent();
-                        if (enderecoResult.success) {
-                            this.lista = enderecoResult.data;
+                        result = _a.sent();
+                        if (result.success) {
+                            __WEBPACK_IMPORTED_MODULE_2__providers_usuario_usuario__["a" /* UsuarioProvider */].RegisterLogin(result.data);
+                            this.navCtrl.setRoot("CategoriaPage");
                         }
+                        console.log(result);
                         return [2 /*return*/];
                 }
             });
         });
     };
-    ListEnderecosEntregaPage.prototype.addOrEdit = function (model) {
-        this.navCtrl.push("CadEnderecoEntregaPage", { _endereco: model });
+    LoginPage.prototype.cadastrar = function () {
+        this.navCtrl.setRoot("CadastroPage");
     };
-    ListEnderecosEntregaPage = __decorate([
+    LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-list-enderecos-entrega",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\list-enderecos-entrega\list-enderecos-entrega.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Endereços de Entrega</ion-title>\n        <ion-buttons right>\n            <button ion-button icon-only (click)="addOrEdit({})">\n        <ion-icon name="add"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list lines>\n        <ion-item text-wrap *ngIf="lista.length == 0">\n            Você não possui endereço de entrega cadastrado.\n        </ion-item>\n        <ion-item *ngFor="let item of lista" text-wrap (click)="addOrEdit(item)">\n            Rua {{item.rua}}, {{item.numero}}, Bairro {{item.bairro}}\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\list-enderecos-entrega\list-enderecos-entrega.html"*/
+            selector: "page-login",template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\login\login.html"*/'<ion-content padding class="backImage">\n  <div>\n    <img src="assets/imagens/logo.png" class="logo">\n  </div>\n\n  <ion-list no-lines class="list-transparent">\n    <ion-item>\n      <ion-input [(ngModel)]="form.email" type="text" placeholder="E-mail"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="form.senha" type="password" placeholder="Senha"></ion-input>\n    </ion-item>\n  </ion-list>\n  <div>\n    <ion-grid>\n      <ion-row>\n        <button ion-button color="secondary" block round (click)="login()" class=\'botao\' style="margin-top: 20%">\n          Efetuar Login\n        </button>\n      </ion-row>\n      <p class="cadastroQuest">Ainda não possui conta?</p>\n      <ion-row>\n        <button ion-button block outline round color="secondary" (click)="cadastrar()" class=\'botao\'>\n          Cadastrar-se\n        </button>\n      </ion-row>\n    </ion-grid>\n    <!-- <div class="rodapeLogo">\n            <img src="assets/imagens/rodape.png" alt>\n\n        </div> -->\n  </div>\n</ion-content>\n'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\login\login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_endereco_endereco__["a" /* EnderecoEntregaProvider */]])
-    ], ListEnderecosEntregaPage);
-    return ListEnderecosEntregaPage;
+            __WEBPACK_IMPORTED_MODULE_2__providers_usuario_usuario__["a" /* UsuarioProvider */]])
+    ], LoginPage);
+    return LoginPage;
 }());
 
-//# sourceMappingURL=list-enderecos-entrega.js.map
+//# sourceMappingURL=login.js.map
 
 /***/ })
 

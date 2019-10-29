@@ -1,22 +1,25 @@
-import { Component } from "@angular/core";
-import { IonicPage, NavController, NavParams } from "ionic-angular";
-import { ProdutoModel } from "../../app/models/produtoModel";
-import { ProdutoProvider } from "../../providers/produto/produto";
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ProdutoModel } from '../../app/models/produtoModel';
+import { ProdutoProvider } from '../../providers/produto/produto';
 
 @IonicPage()
 @Component({
-  selector: "page-adm-produtos",
-  templateUrl: "adm-produtos.html"
+  selector: 'page-adm-produtos',
+  templateUrl: 'adm-produtos.html',
 })
 export class AdmProdutosPage {
+
+
   lista: Array<ProdutoModel> = new Array<ProdutoModel>();
   isLoading: boolean = true;
 
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    private produtoSrv: ProdutoProvider
-  ) {}
+    private produtoSrv: ProdutoProvider) {
+
+  }
 
   ionViewWillEnter() {
     this.isLoading = true;
@@ -32,6 +35,8 @@ export class AdmProdutosPage {
   }
 
   addOrEdit(model?: ProdutoModel): void {
-    this.navCtrl.push("AdmProdutoPage", { _produto: model });
+    this.navCtrl.push('AdmProdutoPage', { _produto: model });
   }
+
+
 }

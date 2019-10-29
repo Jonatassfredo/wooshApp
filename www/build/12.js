@@ -1,14 +1,14 @@
 webpackJsonp([12],{
 
-/***/ 315:
+/***/ 314:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CadEnderecoEntregaPageModule", function() { return CadEnderecoEntregaPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CadastroPageModule", function() { return CadastroPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cad_endereco_entrega__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cadastro__ = __webpack_require__(341);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,36 +18,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var CadEnderecoEntregaPageModule = /** @class */ (function () {
-    function CadEnderecoEntregaPageModule() {
+var CadastroPageModule = /** @class */ (function () {
+    function CadastroPageModule() {
     }
-    CadEnderecoEntregaPageModule = __decorate([
+    CadastroPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__cad_endereco_entrega__["a" /* CadEnderecoEntregaPage */],
+                __WEBPACK_IMPORTED_MODULE_2__cadastro__["a" /* CadastroPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__cad_endereco_entrega__["a" /* CadEnderecoEntregaPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__cadastro__["a" /* CadastroPage */]),
             ],
         })
-    ], CadEnderecoEntregaPageModule);
-    return CadEnderecoEntregaPageModule;
+    ], CadastroPageModule);
+    return CadastroPageModule;
 }());
 
-//# sourceMappingURL=cad-endereco-entrega.module.js.map
+//# sourceMappingURL=cadastro.module.js.map
 
 /***/ }),
 
-/***/ 340:
+/***/ 341:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadEnderecoEntregaPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_models_enderecoModel__ = __webpack_require__(226);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_endereco_endereco__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_alert_alert__ = __webpack_require__(59);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadastroPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_alert_alert__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_usuario_usuario__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_models_usuarioModel__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(20);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -97,89 +97,47 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
-var CadEnderecoEntregaPage = /** @class */ (function () {
-    function CadEnderecoEntregaPage(navCtrl, navParams, platform, enderecoSrv, alertSrv) {
+var CadastroPage = /** @class */ (function () {
+    function CadastroPage(navCtrl, navParams, usuarioSrv, alertSrv) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.platform = platform;
-        this.enderecoSrv = enderecoSrv;
+        this.usuarioSrv = usuarioSrv;
         this.alertSrv = alertSrv;
-        var _ender = this.navParams.get("_endereco");
-        if (_ender)
-            this.endereco = _ender;
-        else
-            this.endereco = new __WEBPACK_IMPORTED_MODULE_2__app_models_enderecoModel__["a" /* EnderecoEntregaModel */]();
+        this.usuario = new __WEBPACK_IMPORTED_MODULE_2__app_models_usuarioModel__["a" /* UsuarioModel */]();
     }
-    CadEnderecoEntregaPage.prototype.excluir = function () {
+    CadastroPage.prototype.cadastrar = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                try {
-                    this.alertSrv.confirm("Excluir?", "Deseja realmente excluir a endereco " + this.endereco.rua + "?", function () { return __awaiter(_this, void 0, void 0, function () {
-                        var excluirResult;
-                        return __generator(this, function (_a) {
-                            switch (_a.label) {
-                                case 0: return [4 /*yield*/, this.enderecoSrv.delete(this.endereco._id)];
-                                case 1:
-                                    excluirResult = _a.sent();
-                                    if (excluirResult.success) {
-                                        this.alertSrv.toast("Categoria excluída com sucesso!", "bottom");
-                                        this.navCtrl.setRoot("ListEnderecosEntregaPage");
-                                    }
-                                    return [2 /*return*/];
-                            }
-                        });
-                    }); });
-                }
-                catch (error) {
-                    console.log("Erro ao excluir", error);
-                }
-                return [2 /*return*/];
-            });
-        });
-    };
-    CadEnderecoEntregaPage.prototype.salvar = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var sucesso, cadastroResult, updateResult;
+            var cadastroResult;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0:
-                        sucesso = false;
-                        if (!!this.endereco._id) return [3 /*break*/, 2];
-                        return [4 /*yield*/, this.enderecoSrv.post(this.endereco)];
+                    case 0: return [4 /*yield*/, this.usuarioSrv.register(this.usuario)];
                     case 1:
                         cadastroResult = _a.sent();
-                        sucesso = cadastroResult.success;
-                        return [3 /*break*/, 4];
-                    case 2: return [4 /*yield*/, this.enderecoSrv.put(this.endereco._id, this.endereco)];
-                    case 3:
-                        updateResult = _a.sent();
-                        sucesso = updateResult.success;
-                        _a.label = 4;
-                    case 4:
-                        if (sucesso) {
-                            this.alertSrv.toast("Endereço salvo com sucesso!", "bottom");
-                            this.navCtrl.setRoot("ListEnderecosEntregaPage");
+                        if (cadastroResult.success) {
+                            this.alertSrv.toast('Cadastro realizado com sucesso!', 'bottom');
+                            this.navCtrl.setRoot('LoginPage');
                         }
                         return [2 /*return*/];
                 }
             });
         });
     };
-    CadEnderecoEntregaPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-cad-endereco-entrega",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cad-endereco-entrega\cad-endereco-entrega.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Endereço</ion-title>\n        <ion-buttons right>\n            <button ion-button clear (click)="salvar()">\n        Salvar\n      </button>\n            <button *ngIf="endereco._id" ion-button icon-only (click)="excluir()">\n        <ion-icon name="trash"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list no-lines>\n\n        <ion-item>\n            <ion-label floating>Cidade</ion-label>\n            <ion-input [(ngModel)]="endereco.cidade" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>UF</ion-label>\n            <ion-input [(ngModel)]="endereco.uf" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>CEP</ion-label>\n            <ion-input [(ngModel)]="endereco.cep" type="number"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Bairro</ion-label>\n            <ion-input [(ngModel)]="endereco.bairro" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Rua</ion-label>\n            <ion-input [(ngModel)]="endereco.rua" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Número</ion-label>\n            <ion-input [(ngModel)]="endereco.numero" type="number"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Ponto de Referência</ion-label>\n            <ion-textarea [(ngModel)]="endereco.pontoReferencia" rows="2"></ion-textarea>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Orientações</ion-label>\n            <ion-textarea [(ngModel)]="endereco.orientacoes" rows="4"></ion-textarea>\n        </ion-item>\n\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cad-endereco-entrega\cad-endereco-entrega.html"*/
+    CadastroPage.prototype.cancelar = function () {
+        this.navCtrl.setRoot('LoginPage');
+    };
+    CadastroPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
+            selector: 'page-cadastro',template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cadastro\cadastro.html"*/'<ion-content padding class="backImage">\n  <div>\n    <img src="assets/imagens/logo.png" class="logo">\n    <!-- <span>Woosh</span> -->\n  </div>\n  <ion-list no-lines class="list-transparent">\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.nome" type="text" placeholder="Nome"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.email" type="text" placeholder="E-mail"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.cpf" type="number" placeholder="CPF" #input maxlength="10"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.senha" type="password" placeholder="Senha"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.senhaConfirmacao" type="password" placeholder="Confirmar Senha"></ion-input>\n    </ion-item>\n  </ion-list>\n  <div>\n    <ion-grid>\n      <ion-row>\n        <button ion-button block round color="secondary" (click)="cadastrar()" class=\'botao\'>\n          Cadastrar\n        </button>\n      </ion-row>\n      <ion-row>\n        <button ion-button block outline round color="secondary" (click)="cancelar()" class=\'botao\'>\n          Cancelar\n        </button>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>\n'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cadastro\cadastro.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_endereco_endereco__["a" /* EnderecoEntregaProvider */],
-            __WEBPACK_IMPORTED_MODULE_4__providers_alert_alert__["a" /* AlertProvider */]])
-    ], CadEnderecoEntregaPage);
-    return CadEnderecoEntregaPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["l" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1__providers_usuario_usuario__["a" /* UsuarioProvider */],
+            __WEBPACK_IMPORTED_MODULE_0__providers_alert_alert__["a" /* AlertProvider */]])
+    ], CadastroPage);
+    return CadastroPage;
 }());
 
-//# sourceMappingURL=cad-endereco-entrega.js.map
+//# sourceMappingURL=cadastro.js.map
 
 /***/ })
 

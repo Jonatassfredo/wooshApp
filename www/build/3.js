@@ -1,15 +1,15 @@
 webpackJsonp([3],{
 
-/***/ 326:
+/***/ 323:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VisualizarProdutoPageModule", function() { return VisualizarProdutoPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pipes_pipes_module__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pipes_pipes_module__ = __webpack_require__(327);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__visualizar_produto__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__visualizar_produto__ = __webpack_require__(349);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var VisualizarProdutoPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 327:
+/***/ 325:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71,7 +71,7 @@ var UtilsHelper = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 328:
+/***/ 326:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -86,14 +86,14 @@ var ProdutoModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 329:
+/***/ 327:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PipesModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__real_real__ = __webpack_require__(330);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__order_by_order_by__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__real_real__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__order_by_order_by__ = __webpack_require__(329);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -122,13 +122,13 @@ var PipesModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 330:
+/***/ 328:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RealPipe; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_helpers_utilsHelper__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_helpers_utilsHelper__ = __webpack_require__(325);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -159,13 +159,13 @@ var RealPipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 331:
+/***/ 329:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrderByPipe; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_helpers_utilsHelper__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_helpers_utilsHelper__ = __webpack_require__(325);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -200,14 +200,14 @@ var OrderByPipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 350:
+/***/ 349:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VisualizarProdutoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_carrinho_carrinho__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_alert_alert__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_models_produtoModel__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_carrinho_carrinho__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_alert_alert__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_models_produtoModel__ = __webpack_require__(326);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(20);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -246,7 +246,7 @@ var VisualizarProdutoPage = /** @class */ (function () {
     };
     VisualizarProdutoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'page-visualizar-produto',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\visualizar-produto\visualizar-produto.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only (click)="voltar()">\n        <ion-icon name="arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Visualizar Produto</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n  <div class="foto" [ngStyle]="{\'background-image\': \'url(\' + produto.foto + \')\'}">\n  </div>\n  <ion-list padding>\n    <ion-item text-wrap>\n      <h2>Nome</h2>\n      <p>{{produto.nome}}</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Descrição</h2>\n      <p>{{produto.descricao}}</p>\n    </ion-item>\n    <ion-item class="preco">\n      <p>\n        {{produto.preco | real}}\n      </p>\n    </ion-item>\n  </ion-list>\n</ion-content>\n<ion-footer text-center padding>\n  <button block ion-button outline round color="primary" (click)="adicionarNoCarrinho()">Adicionar ao Carrinho</button>\n</ion-footer>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\visualizar-produto\visualizar-produto.html"*/,
+            selector: 'page-visualizar-produto',template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\visualizar-produto\visualizar-produto.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only (click)="voltar()">\n        <ion-icon name="arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Visualizar Produto</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n  <div class="foto" [ngStyle]="{\'background-image\': \'url(\' + produto.foto + \')\'}">\n  </div>\n  <ion-list padding>\n    <ion-item text-wrap>\n      <h2>Nome</h2>\n      <p>{{produto.nome}}</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <h2>Descrição</h2>\n      <p>{{produto.descricao}}</p>\n    </ion-item>\n    <ion-item class="preco">\n      <p>\n        {{produto.preco | real}}\n      </p>\n    </ion-item>\n  </ion-list>\n</ion-content>\n<ion-footer text-center padding>\n  <button block ion-button outline round color="primary" (click)="adicionarNoCarrinho()">Adicionar ao Carrinho</button>\n</ion-footer>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\visualizar-produto\visualizar-produto.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["l" /* NavParams */],

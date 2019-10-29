@@ -1,6 +1,6 @@
 webpackJsonp([6],{
 
-/***/ 313:
+/***/ 311:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38,7 +38,7 @@ var AdmProdutoPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 328:
+/***/ 326:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60,11 +60,11 @@ var ProdutoModel = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdmProdutoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_camera_camera__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_categoria_categoria__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_produto_produto__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_models_produtoModel__ = __webpack_require__(328);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_alert_alert__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_camera_camera__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_categoria_categoria__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_produto_produto__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_models_produtoModel__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_alert_alert__ = __webpack_require__(108);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -127,7 +127,7 @@ var AdmProdutoPage = /** @class */ (function () {
         this.produtoSrv = produtoSrv;
         this.alertSrv = alertSrv;
         this.categorias = new Array();
-        var _prod = this.navParams.get("_produto");
+        var _prod = this.navParams.get('_produto');
         if (_prod && _prod._id) {
             this.produto = _prod;
             this.produto.categoriaId = _prod.categoriaId._id;
@@ -152,7 +152,7 @@ var AdmProdutoPage = /** @class */ (function () {
                         return [3 /*break*/, 3];
                     case 2:
                         error_1 = _a.sent();
-                        console.log("Erro ao carregar as categorias", error_1);
+                        console.log('Erro ao carregar as categorias', error_1);
                         return [3 /*break*/, 3];
                     case 3: return [2 /*return*/];
                 }
@@ -164,7 +164,7 @@ var AdmProdutoPage = /** @class */ (function () {
             var _this = this;
             return __generator(this, function (_a) {
                 try {
-                    this.alertSrv.confirm("Excluir?", "Deseja realmente excluir o produto " + this.produto.nome + "?", function () { return __awaiter(_this, void 0, void 0, function () {
+                    this.alertSrv.confirm('Excluir?', "Deseja realmente excluir o produto " + this.produto.nome + "?", function () { return __awaiter(_this, void 0, void 0, function () {
                         var excluirResult;
                         return __generator(this, function (_a) {
                             switch (_a.label) {
@@ -172,8 +172,8 @@ var AdmProdutoPage = /** @class */ (function () {
                                 case 1:
                                     excluirResult = _a.sent();
                                     if (excluirResult.success) {
-                                        this.alertSrv.toast("Produto excluído com sucesso!", "bottom");
-                                        this.navCtrl.setRoot("AdmProdutosPage");
+                                        this.alertSrv.toast('Produto excluído com sucesso!', 'bottom');
+                                        this.navCtrl.setRoot('AdmProdutosPage');
                                     }
                                     return [2 /*return*/];
                             }
@@ -181,7 +181,7 @@ var AdmProdutoPage = /** @class */ (function () {
                     }); });
                 }
                 catch (error) {
-                    console.log("Erro ao excluir", error);
+                    console.log('Erro ao excluir', error);
                 }
                 return [2 /*return*/];
             });
@@ -207,8 +207,8 @@ var AdmProdutoPage = /** @class */ (function () {
                         _a.label = 4;
                     case 4:
                         if (sucesso) {
-                            this.alertSrv.toast("Produto salvo com sucesso!", "bottom");
-                            this.navCtrl.setRoot("AdmProdutosPage");
+                            this.alertSrv.toast('Produto salvo com sucesso!', 'bottom');
+                            this.navCtrl.setRoot('AdmProdutosPage');
                         }
                         return [2 /*return*/];
                 }
@@ -218,30 +218,29 @@ var AdmProdutoPage = /** @class */ (function () {
     AdmProdutoPage.prototype.getPictureOption = function () {
         var _this = this;
         var actionSheet = this.actionSheetCtrl.create({
-            title: "Adicionar foto",
+            title: 'Adicionar foto',
             buttons: [
                 {
-                    text: "Tirar Foto",
-                    handler: function () {
+                    text: 'Tirar Foto', handler: function () {
                         _this.cameraSrv.takePicture(function (photo) {
                             _this.produto.foto = photo;
                         });
                     },
-                    icon: this.platform.is("ios") ? null : "camera"
+                    icon: this.platform.is('ios') ? null : 'camera'
                 },
                 {
-                    text: "Pegar galeria",
-                    handler: function () {
+                    text: 'Pegar galeria',
+                    handler: (function () {
                         _this.cameraSrv.getPictureFromGalery(function (photo) {
                             _this.produto.foto = photo;
                         });
-                    },
-                    icon: this.platform.is("ios") ? null : "images"
+                    }),
+                    icon: this.platform.is('ios') ? null : 'images'
                 },
                 {
-                    text: "Cancelar",
-                    role: "destructive",
-                    icon: this.platform.is("ios") ? null : "close",
+                    text: 'Cancelar',
+                    role: 'destructive',
+                    icon: this.platform.is('ios') ? null : 'close',
                     handler: function () {
                         //Cancela a ação
                     }
@@ -252,7 +251,7 @@ var AdmProdutoPage = /** @class */ (function () {
     };
     AdmProdutoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-adm-produto",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\adm-produto\adm-produto.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Produto</ion-title>\n        <ion-buttons right>\n            <button ion-button clear (click)="salvar()">\n        Salvar\n      </button>\n            <button *ngIf="produto._id" ion-button icon-only (click)="excluir()">\n        <ion-icon name="trash"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list no-lines>\n        <ion-item>\n            <ion-label floating>Título</ion-label>\n            <ion-input [(ngModel)]="produto.nome" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Preço</ion-label>\n            <ion-input type="tel" [(ngModel)]="produto.preco"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Descrição</ion-label>\n            <ion-textarea [(ngModel)]="produto.descricao" rows="4"></ion-textarea>\n        </ion-item>\n        <ion-item>\n            <ion-label>Categoria</ion-label>\n            <ion-select [(ngModel)]="produto.categoriaId">\n                <ion-option *ngFor="let item of categorias">{{item.titulo}}</ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item text-center>\n            <button ion-button clear (click)="getPictureOption()">\n        <ion-icon name="camera" item-left></ion-icon>\n        Selecionar Foto\n      </button>\n        </ion-item>\n        <ion-item *ngIf="produto.foto">\n            <img [src]="produto.foto">\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\adm-produto\adm-produto.html"*/
+            selector: 'page-adm-produto',template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\adm-produto\adm-produto.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Produto</ion-title>\n        <ion-buttons right>\n            <button ion-button clear (click)="salvar()">\n                Salvar\n            </button>\n            <button *ngIf="produto._id" ion-button icon-only (click)="excluir()">\n                <ion-icon name="trash"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list no-lines>\n        <ion-item>\n            <ion-label floating>Título</ion-label>\n            <ion-input [(ngModel)]="produto.nome" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Preço</ion-label>\n            <ion-input type="tel" [(ngModel)]="produto.preco"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Descrição</ion-label>\n            <ion-textarea [(ngModel)]="produto.descricao" rows="4"></ion-textarea>\n        </ion-item>\n        <ion-item>\n            <ion-label>Categoria</ion-label>\n            <ion-select [(ngModel)]="produto.categoriaId">\n                <ion-option value="{{item._id}}" *ngFor="let item of categorias">{{item.titulo}}</ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item text-center>\n            <button ion-button clear (click)="getPictureOption()">\n                <ion-icon name="camera" item-left></ion-icon>\n                Selecionar Foto\n            </button>\n        </ion-item>\n        <ion-item *ngIf="produto.foto">\n            <img [src]="produto.foto">\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\adm-produto\adm-produto.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
