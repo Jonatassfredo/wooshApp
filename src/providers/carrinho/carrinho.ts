@@ -93,7 +93,7 @@ export class CarrinhoProvider {
     _pedido.valorTotal = pedido.valorTotal;
     _pedido.itens = [];
     _pedido.enderecoEntregaId = pedido.enderecoEntregaId;
-    _pedido.enderecoEntrega = pedido.enderecoEntrega;
+    // _pedido.enderecoEntrega = pedido.enderecoEntrega;
     _pedido.usuarioNome = this.usuario.nome;
     _pedido.formaPagamento = pedido.formaPagamento;
     console.log("pedido inteiro", _pedido);
