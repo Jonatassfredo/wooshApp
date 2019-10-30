@@ -560,7 +560,6 @@ var CarrinhoPage = /** @class */ (function () {
                                 case 0: return [4 /*yield*/, this.carrinhoSrv.SalvarPedido(this.carrinho)];
                                 case 1:
                                     pedidoResult = _a.sent();
-                                    console.log("meu carinho", this.carrinho);
                                     if (pedidoResult.success) {
                                         this.carrinho.valorTotal = 0;
                                         this.carrinho.itens = [];

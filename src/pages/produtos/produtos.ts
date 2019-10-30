@@ -29,7 +29,7 @@ export class ProdutosPage {
     private produtoSrv: ProdutoProvider,
     private carrinhoSrv: CarrinhoProvider,
     public ModalCtrl: ModalController
-  ) {}
+  ) { }
 
   ionViewWillEnter() {
     this.carrinhoSrv.getCarrinho().subscribe(data => {
@@ -49,7 +49,6 @@ export class ProdutosPage {
       );
       if (produtosResult.success)
         this.produtos = <Array<ProdutoModel>>produtosResult.data;
-      console.log(produtosResult);
     } catch (error) {
       console.log("problema ao carregar os produtos", error);
     }

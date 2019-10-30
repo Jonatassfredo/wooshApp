@@ -4,6 +4,7 @@ export class ListaPedidosModel {
   itens: string;
   usuarioId: string;
   operadorId: string;
+  usuarioNome: string;
 
   public static getTotalItens(itens: string): number {
     try {

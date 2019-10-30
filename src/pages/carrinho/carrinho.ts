@@ -74,7 +74,6 @@ export class CarrinhoPage {
         "Deseja concluir seu pedido?",
         async () => {
           let pedidoResult = await this.carrinhoSrv.SalvarPedido(this.carrinho);
-          console.log("meu carinho", this.carrinho);
 
           if (pedidoResult.success) {
             this.carrinho.valorTotal = 0;

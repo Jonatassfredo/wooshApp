@@ -521,7 +521,6 @@ var ProdutosPage = /** @class */ (function () {
                         produtosResult = _a.sent();
                         if (produtosResult.success)
                             this.produtos = produtosResult.data;
-                        console.log(produtosResult);
                         return [3 /*break*/, 3];
                     case 2:
                         error_1 = _a.sent();

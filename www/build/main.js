@@ -183,15 +183,15 @@ var map = {
 		5
 	],
 	"../pages/list-enderecos-entrega/list-enderecos-entrega.module": [
-		319,
+		317,
 		11
 	],
 	"../pages/login/login.module": [
-		317,
+		318,
 		10
 	],
 	"../pages/mensagens/mensagens.module": [
-		318,
+		319,
 		15
 	],
 	"../pages/meus-pedidos/meus-pedidos.module": [
@@ -436,9 +436,8 @@ var CarrinhoProvider = /** @class */ (function () {
         this.usuario = __WEBPACK_IMPORTED_MODULE_8__usuario_usuario__["a" /* UsuarioProvider */].GetUsuario();
         _pedido.valorTotal = pedido.valorTotal;
         _pedido.itens = [];
-        _pedido.formaPagamento = pedido.formaPagamento;
         _pedido.enderecoEntregaId = pedido.enderecoEntregaId;
-        // _pedido.enderecoEntrega = pedido.enderecoEntrega;
+        _pedido.enderecoEntrega = pedido.enderecoEntrega;
         _pedido.usuarioNome = this.usuario.nome;
         _pedido.formaPagamento = pedido.formaPagamento;
         console.log("pedido inteiro", _pedido);
@@ -473,10 +472,9 @@ var CarrinhoProvider = /** @class */ (function () {
     };
     CarrinhoProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__http_http__["a" /* HttpProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__http_http__["a" /* HttpProvider */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["d" /* Events */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["d" /* Events */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__http_http__["a" /* HttpProvider */], __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["d" /* Events */]])
     ], CarrinhoProvider);
     return CarrinhoProvider;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=carrinho.js.map
@@ -1067,9 +1065,9 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/carrinho/carrinho.module#CarrinhoPageModule', name: 'CarrinhoPage', segment: 'carrinho', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/categoria/categoria.module#CategoriaPageModule', name: 'CategoriaPage', segment: 'categoria', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/list-enderecos-entrega/list-enderecos-entrega.module#ListEnderecosEntregaPageModule', name: 'ListEnderecosEntregaPage', segment: 'list-enderecos-entrega', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mensagens/mensagens.module#MensagensPageModule', name: 'MensagensPage', segment: 'mensagens', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/list-enderecos-entrega/list-enderecos-entrega.module#ListEnderecosEntregaPageModule', name: 'ListEnderecosEntregaPage', segment: 'list-enderecos-entrega', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/meus-pedidos/meus-pedidos.module#MeusPedidosPageModule', name: 'MeusPedidosPage', segment: 'meus-pedidos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/minha-conta/minha-conta.module#MinhaContaPageModule', name: 'MinhaContaPage', segment: 'minha-conta', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/produtos/produtos.module#ProdutosPageModule', name: 'ProdutosPage', segment: 'produtos', priority: 'low', defaultHistory: [] },
