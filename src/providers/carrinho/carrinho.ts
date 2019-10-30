@@ -8,12 +8,15 @@ import { CarrinhoModel } from "../../app/models/carrinhoModel";
 import { Events } from "ionic-angular";
 import { ConfigHelper } from "../../app/helpers/configHelper";
 import { HttpResultModel } from "../../app/models/HttpResultModel";
+import { UsuarioModel } from "../../app/models/usuarioModel";
+import { UsuarioProvider } from "../usuario/usuario";
 
 @Injectable()
 export class CarrinhoProvider {
   private _carrinho: CarrinhoModel = new CarrinhoModel();
   private carrinho: Observable<CarrinhoModel>;
   private carrinhoObservable: any;
+  usuario: UsuarioModel = new UsuarioModel();
 
   constructor(public http: HttpProvider, public evt: Events) {
     //Inicializando nosso carrinho
@@ -86,13 +89,15 @@ export class CarrinhoProvider {
 
   public SalvarPedido(pedido: CarrinhoModel): Promise<HttpResultModel> {
     let _pedido: any = {};
+    this.usuario = UsuarioProvider.GetUsuario();
     _pedido.valorTotal = pedido.valorTotal;
     _pedido.itens = [];
     _pedido.formaPagamento = pedido.formaPagamento;
     _pedido.enderecoEntregaId = pedido.enderecoEntregaId;
-    _pedido.enderecoEntrega = pedido.enderecoEntrega;
-
-    console.log("endereco inteiro", _pedido.enderecoEntrega);
+    // _pedido.enderecoEntrega = pedido.enderecoEntrega;
+    _pedido.usuarioNome = this.usuario.nome;
+    _pedido.formaPagamento = pedido.formaPagamento;
+    console.log("pedido inteiro", _pedido);
 
     // pedido.enderecoEntrega.forEach(ender => {
     //   _pedido.enderecoEntrega.push({
@@ -113,7 +118,8 @@ export class CarrinhoProvider {
         quantidade: prod.Quantidade,
         produtoId: prod.Produto._id,
         nomeProd: prod.Produto.nome,
-        observacoes: prod.Observacoes
+        observacoes: prod.Observacoes,
+        valor: prod.valor
       });
     });
     console.log("pedido", _pedido);

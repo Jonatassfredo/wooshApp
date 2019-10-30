@@ -31,11 +31,14 @@ export class AdmProdutosPage {
     if (produtoResult.success) {
       this.isLoading = false;
       this.lista = <Array<ProdutoModel>>produtoResult.data;
+      console.log(this.lista);
+
     }
   }
 
   addOrEdit(model?: ProdutoModel): void {
     this.navCtrl.push('AdmProdutoPage', { _produto: model });
+    console.log("model", model);
   }
 
 

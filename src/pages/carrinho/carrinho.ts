@@ -8,6 +8,9 @@ import { ProdutoModel } from "../../app/models/produtoModel";
 import { EnderecoEntregaModel } from "../../app/models/enderecoModel";
 import { EnderecoEntregaProvider } from "../../providers/endereco/endereco";
 import { MensagensPage } from "../mensagens/mensagens";
+import { UsuarioProvider } from "../../providers/usuario/usuario";
+import { UsuarioModel } from './../../app/models/usuarioModel';
+import { ConfigHelper } from "../../app/helpers/configHelper";
 
 @IonicPage()
 @Component({
@@ -16,11 +19,13 @@ import { MensagensPage } from "../mensagens/mensagens";
 })
 export class CarrinhoPage {
   usuarioLogado: EnderecoEntregaModel = new EnderecoEntregaModel();
+  usuario: UsuarioModel = new UsuarioModel();
   produtos: any;
   totalProdutos: number = 0.0;
   carrinho: CarrinhoModel = new CarrinhoModel();
   enderecos: Array<EnderecoEntregaModel> = new Array<EnderecoEntregaModel>();
   formaPagamento = ["Dinheiro", "Cartão de Crédito/Débito"];
+
 
   constructor(
     public navCtrl: NavController,
@@ -40,6 +45,10 @@ export class CarrinhoPage {
           enderecoEntregaResult.data
         );
         console.log("enderecos", this.enderecos);
+        localStorage.setItem(
+          ConfigHelper.storageKeys.enderecosEntrega,
+          JSON.stringify(enderecoEntregaResult.data)
+        );
       }
     } catch (error) {
       console.log("Erro ao carregar os endereços", error);

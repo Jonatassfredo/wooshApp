@@ -29,6 +29,8 @@ export class AdmProdutoPage {
     private alertSrv: AlertProvider) {
 
     let _prod = this.navParams.get('_produto');
+    console.log("teste item", _prod);
+
     if (_prod && _prod._id) {
       this.produto = <ProdutoModel>_prod;
       this.produto.categoriaId = _prod.categoriaId._id;

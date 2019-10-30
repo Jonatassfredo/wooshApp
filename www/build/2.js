@@ -262,7 +262,7 @@ var ComponentsModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuantidadeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_models_produtoModel__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_enums_AcaoCarrinhoEnum__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_helpers_configHelper__ = __webpack_require__(30);
@@ -328,7 +328,7 @@ var QuantidadeComponent = /** @class */ (function () {
     ], QuantidadeComponent.prototype, "quantidadeAlterada", void 0);
     QuantidadeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'quantidade',template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/'<div>\n  <button round ion-button icon-only color="light" (click)="remover()">\n    -\n  </button>\n  <span class="numero">{{numero}}</span>\n  <button round ion-button icon-only color="dark" (click)="adicionar()">\n    +\n  </button>\n</div>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/
+            selector: 'quantidade',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/'<div>\n  <button round ion-button icon-only color="light" (click)="remover()">\n    -\n  </button>\n  <span class="numero">{{numero}}</span>\n  <button round ion-button icon-only color="dark" (click)="adicionar()">\n    +\n  </button>\n</div>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__["a" /* CarrinhoProvider */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["d" /* Events */]])
@@ -399,7 +399,7 @@ var TabComponent = /** @class */ (function () {
     ], TabComponent.prototype, "pagina", void 0);
     TabComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: "tab",template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/'<ion-footer class="tabs">\n  <div class="tab" *ngFor="let item of tabs" [ngClass]="{\'active\': item.isSelect}" (click)="selecionarTab(item.path)">\n    <ion-icon name="{{item.icon}}"></ion-icon>\n    <p>{{item.label}}</p>\n  </div>\n</ion-footer>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/
+            selector: "tab",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/'<ion-footer class="tabs">\n  <div class="tab" *ngFor="let item of tabs" [ngClass]="{\'active\': item.isSelect}" (click)="selecionarTab(item.path)">\n    <ion-icon name="{{item.icon}}"></ion-icon>\n    <p>{{item.label}}</p>\n  </div>\n</ion-footer>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* NavController */]])
     ], TabComponent);
@@ -415,7 +415,7 @@ var TabComponent = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MeusPedidosPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_carrinho_carrinho__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_carrinho_carrinho__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_models_ListaPedidosModel__ = __webpack_require__(346);
@@ -506,7 +506,7 @@ var MeusPedidosPage = /** @class */ (function () {
     };
     MeusPedidosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-meus-pedidos',template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\meus-pedidos\meus-pedidos.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Meus Pedidos</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-card *ngFor="let item of lista" style="border-radius: 10px;">\n        <ion-card-header icon-left>\n            <ion-icon name="cart"></ion-icon>\n            Pedido realizado em {{ item.dataPedido | date:\'dd/MM/yyyy, HH:mm\' }}\n        </ion-card-header>\n        <ion-card-content>\n            <p>Você comprou {{ contaItem(item) }} produtos neste dia.</p>\n            <p>O valor total da compra foi: <strong> {{ item.valorTotal | real }}</strong></p>\n        </ion-card-content>\n    </ion-card>\n    <div>\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n    </div>\n</ion-content>\n<tab [pagina]="\'Meus Pedidos\'"></tab>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\meus-pedidos\meus-pedidos.html"*/,
+            selector: 'page-meus-pedidos',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\meus-pedidos\meus-pedidos.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Meus Pedidos</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-card *ngFor="let item of lista" style="border-radius: 10px;">\n        <ion-card-header icon-left>\n            <ion-icon name="cart"></ion-icon>\n            Pedido realizado em {{ item.dataPedido | date:\'dd/MM/yyyy, HH:mm\' }}\n        </ion-card-header>\n        <ion-card-content>\n            <p>Você comprou {{ contaItem(item) }} produtos neste dia.</p>\n            <p>O valor total da compra foi: <strong> {{ item.valorTotal | real }}</strong></p>\n        </ion-card-content>\n    </ion-card>\n    <div>\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n    </div>\n</ion-content>\n<tab [pagina]="\'Meus Pedidos\'"></tab>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\meus-pedidos\meus-pedidos.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */],

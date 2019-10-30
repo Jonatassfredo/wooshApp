@@ -9,6 +9,7 @@ export class ConfigHelper {
   public static storageKeys = {
     token: "delivery.token",
     user: "delivery.user",
+    enderecosEntrega: "delivery.enderecoEntrega",
     selectCategory: "Woosh.select.category",
     oneSignalUid: "Woosh.onesignal"
   };

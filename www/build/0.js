@@ -262,7 +262,7 @@ var ComponentsModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuantidadeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_models_produtoModel__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_enums_AcaoCarrinhoEnum__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_helpers_configHelper__ = __webpack_require__(30);
@@ -328,7 +328,7 @@ var QuantidadeComponent = /** @class */ (function () {
     ], QuantidadeComponent.prototype, "quantidadeAlterada", void 0);
     QuantidadeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'quantidade',template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/'<div>\n  <button round ion-button icon-only color="light" (click)="remover()">\n    -\n  </button>\n  <span class="numero">{{numero}}</span>\n  <button round ion-button icon-only color="dark" (click)="adicionar()">\n    +\n  </button>\n</div>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/
+            selector: 'quantidade',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/'<div>\n  <button round ion-button icon-only color="light" (click)="remover()">\n    -\n  </button>\n  <span class="numero">{{numero}}</span>\n  <button round ion-button icon-only color="dark" (click)="adicionar()">\n    +\n  </button>\n</div>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__["a" /* CarrinhoProvider */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["d" /* Events */]])
@@ -399,7 +399,7 @@ var TabComponent = /** @class */ (function () {
     ], TabComponent.prototype, "pagina", void 0);
     TabComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: "tab",template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/'<ion-footer class="tabs">\n  <div class="tab" *ngFor="let item of tabs" [ngClass]="{\'active\': item.isSelect}" (click)="selecionarTab(item.path)">\n    <ion-icon name="{{item.icon}}"></ion-icon>\n    <p>{{item.label}}</p>\n  </div>\n</ion-footer>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/
+            selector: "tab",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/'<ion-footer class="tabs">\n  <div class="tab" *ngFor="let item of tabs" [ngClass]="{\'active\': item.isSelect}" (click)="selecionarTab(item.path)">\n    <ion-icon name="{{item.icon}}"></ion-icon>\n    <p>{{item.label}}</p>\n  </div>\n</ion-footer>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* NavController */]])
     ], TabComponent);
@@ -432,13 +432,15 @@ var EnderecoEntregaModel = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CarrinhoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_alert_alert__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_models_carrinhoModel__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_enums_AcaoCarrinhoEnum__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_models_enderecoModel__ = __webpack_require__(335);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_endereco_endereco__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mensagens_mensagens__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_endereco_endereco__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mensagens_mensagens__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_models_usuarioModel__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_helpers_configHelper__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -492,6 +494,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
+
+
 var CarrinhoPage = /** @class */ (function () {
     function CarrinhoPage(navCtrl, navParams, carrinhoSrv, alertSrv, enderecoSrv) {
         this.navCtrl = navCtrl;
@@ -500,6 +504,7 @@ var CarrinhoPage = /** @class */ (function () {
         this.alertSrv = alertSrv;
         this.enderecoSrv = enderecoSrv;
         this.usuarioLogado = new __WEBPACK_IMPORTED_MODULE_6__app_models_enderecoModel__["a" /* EnderecoEntregaModel */]();
+        this.usuario = new __WEBPACK_IMPORTED_MODULE_9__app_models_usuarioModel__["a" /* UsuarioModel */]();
         this.totalProdutos = 0.0;
         this.carrinho = new __WEBPACK_IMPORTED_MODULE_1__app_models_carrinhoModel__["a" /* CarrinhoModel */]();
         this.enderecos = new Array();
@@ -519,6 +524,7 @@ var CarrinhoPage = /** @class */ (function () {
                         if (enderecoEntregaResult.success) {
                             this.enderecos = (enderecoEntregaResult.data);
                             console.log("enderecos", this.enderecos);
+                            localStorage.setItem(__WEBPACK_IMPORTED_MODULE_10__app_helpers_configHelper__["a" /* ConfigHelper */].storageKeys.enderecosEntrega, JSON.stringify(enderecoEntregaResult.data));
                         }
                         return [3 /*break*/, 3];
                     case 2:
@@ -580,7 +586,7 @@ var CarrinhoPage = /** @class */ (function () {
     };
     CarrinhoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: "page-carrinho",template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\carrinho\carrinho.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Meu Carrinho</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <div class="valor">\n        <h2>{{ carrinho.valorTotal | real }}</h2>\n        <small>seu pedido atual</small>\n    </div>\n    <div class="botao-finalizar">\n        <div class="botao" tappable (click)="finalizarPedido()">\n            Finalizar Pedido\n        </div>\n    </div>\n\n    <div class="entrega">\n        <ion-item no-lines style="border-radius: 10px;">\n            <ion-label class="entregaLabel" no-lines>\n                Entregar em:\n            </ion-label>\n            <ion-select [(ngModel)]="carrinho.enderecoEntregaId" cancelText="Cancelar" okText="Ok">\n                <ion-option value="{{ item._id }}" *ngFor="let item of enderecos">\n                    {{ item.rua }}, {{ item.numero }}, {{ item.bairro }}\n                </ion-option>\n            </ion-select>\n        </ion-item>\n    </div>\n    <div>\n        <ion-item no-lines style="border-radius: 10px;">\n            <ion-label class="entregaLabel" no-lines>\n                Forma de Pagamento:\n            </ion-label>\n            <ion-select [(ngModel)]="carrinho.formaPagamento" cancelText="Cancelar" okText="Ok">\n                <ion-option value="{{ item }}" *ngFor="let item of formaPagamento">\n                    {{ item }}\n                </ion-option>\n            </ion-select>\n        </ion-item>\n    </div>\n\n    <div class="produtos">\n        <div class="produto" *ngFor="let item of carrinho.itens" tappable>\n            <div class="imagem" [ngStyle]="{ \'background-image\': \'url(\' + item.Produto.foto + \')\' }"></div>\n            <div class="titulo">{{ item.Produto.nome }}</div>\n            <div class="descricao">{{ item.Produto.descricao }}</div>\n            <div class="preco">{{ item.Produto.preco | real }}</div>\n            <div class="quantidade">\n                <quantidade [produto]="item.Produto" (quantidadeAlterada)="quantidadeAlterada(item.Produto, $event)">\n                </quantidade>\n            </div>\n            <ion-item>\n                <ion-label floating>Observações</ion-label>\n                <ion-input [(ngModel)]="item.Observacoes" type="text"></ion-input>\n            </ion-item>\n        </div>\n    </div>\n    <div>\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n    </div>\n</ion-content>\n<tab [pagina]="\'Meu Carrinho\'"></tab>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\carrinho\carrinho.html"*/
+            selector: "page-carrinho",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\carrinho\carrinho.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Meu Carrinho</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <div class="valor">\n        <h2>{{ carrinho.valorTotal | real }}</h2>\n        <small>seu pedido atual</small>\n    </div>\n    <div class="botao-finalizar">\n        <div class="botao" tappable (click)="finalizarPedido()">\n            Finalizar Pedido\n        </div>\n    </div>\n\n    <div class="entrega">\n        <ion-item no-lines style="border-radius: 10px;">\n            <ion-label class="entregaLabel" no-lines>\n                Entregar em:\n            </ion-label>\n            <ion-select [(ngModel)]="carrinho.enderecoEntregaId" cancelText="Cancelar" okText="Ok">\n                <ion-option value="{{ item._id }}" *ngFor="let item of enderecos">\n                    {{ item.rua }}, {{ item.numero }}, {{ item.bairro }}\n                </ion-option>\n            </ion-select>\n        </ion-item>\n    </div>\n    <div>\n        <ion-item no-lines style="border-radius: 10px;">\n            <ion-label class="entregaLabel" no-lines>\n                Forma de Pagamento:\n            </ion-label>\n            <ion-select [(ngModel)]="carrinho.formaPagamento" cancelText="Cancelar" okText="Ok">\n                <ion-option value="{{ item }}" *ngFor="let item of formaPagamento">\n                    {{ item }}\n                </ion-option>\n            </ion-select>\n        </ion-item>\n    </div>\n\n    <div class="produtos">\n        <div class="produto" *ngFor="let item of carrinho.itens" tappable>\n            <div class="imagem" [ngStyle]="{ \'background-image\': \'url(\' + item.Produto.foto + \')\' }"></div>\n            <div class="titulo">{{ item.Produto.nome }}</div>\n            <div class="descricao">{{ item.Produto.descricao }}</div>\n            <div class="preco">{{ item.Produto.preco | real }}</div>\n            <div class="quantidade">\n                <quantidade [produto]="item.Produto" (quantidadeAlterada)="quantidadeAlterada(item.Produto, $event)">\n                </quantidade>\n            </div>\n            <ion-item>\n                <ion-label floating>Observações</ion-label>\n                <ion-input [(ngModel)]="item.Observacoes" type="text"></ion-input>\n            </ion-item>\n        </div>\n    </div>\n    <div>\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n    </div>\n</ion-content>\n<tab [pagina]="\'Meu Carrinho\'"></tab>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\carrinho\carrinho.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["l" /* NavParams */],
