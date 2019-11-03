@@ -33,7 +33,7 @@ export class CadEnderecoEntregaPage {
           let excluirResult = await this.enderecoSrv.delete(this.endereco._id);
           if (excluirResult.success) {
             this.alertSrv.toast("Categoria excluída com sucesso!", "bottom");
-            this.navCtrl.setRoot("ListEnderecosEntregaPage");
+            this.navCtrl.push("ListEnderecosEntregaPage");
           }
         }
       );
