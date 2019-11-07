@@ -123,7 +123,8 @@ export class CarrinhoProvider {
     });
     console.log("pedido", _pedido);
 
-    _pedido.itens = JSON.stringify(_pedido.itens);
+    // _pedido.itens = JSON.stringify(_pedido.itens);
+
     return this.http.post(`${ConfigHelper.Url}pedido`, _pedido);
   }
 

@@ -7,11 +7,25 @@
     <ion-card *ngFor="let item of lista" style="border-radius: 10px;">
         <ion-card-header icon-left>
             <ion-icon name="cart"></ion-icon>
-            Pedido realizado em {{ item.dataPedido | date:'dd/MM/yyyy, HH:mm' }}
+            Pedido realizado em <strong>{{ item.dataPedido | date:'dd/MM/yyyy, HH:mm' }}</strong>
         </ion-card-header>
         <ion-card-content>
-            <p>Você comprou {{ contaItem(item) }} produtos neste dia.</p>
-            <p>O valor total da compra foi: <strong> {{ item.valorTotal | real }}</strong></p>
+            <p>Status: <strong> {{ item.status}}</strong></p>
+            <ion-item>
+                <p><strong>Produtos:</strong></p>
+                <br>
+                <div *ngFor="let produto of item.itens">
+                    <!-- <td>{{produto.quantidade}}</td>
+                                    <td>{{produto.nomeProd}}</td>
+                                    <td>{{produto.observacoes}}</td> -->
+                    <p>Produto: <strong>{{produto.nomeProd}}</strong></p>
+                    <p>Quantidade: <strong>{{produto.quantidade}}</strong></p>
+                    <!-- <strong>Produto ID: <strong>{{produto.produtoId}}</strong></p> -->
+                    <p>Observaçoes: <strong>{{produto.observacoes}}</strong></p>
+                    <br>
+                </div>
+            </ion-item>
+            <p>Valor Total: <strong> {{ item.valorTotal | real }}</strong></p>
         </ion-card-content>
     </ion-card>
     <div>

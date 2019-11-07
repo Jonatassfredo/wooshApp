@@ -464,7 +464,7 @@ var CarrinhoProvider = /** @class */ (function () {
             });
         });
         console.log("pedido", _pedido);
-        _pedido.itens = JSON.stringify(_pedido.itens);
+        // _pedido.itens = JSON.stringify(_pedido.itens);
         return this.http.post(__WEBPACK_IMPORTED_MODULE_6__app_helpers_configHelper__["a" /* ConfigHelper */].Url + "pedido", _pedido);
     };
     CarrinhoProvider.prototype.GetMeusPedidos = function () {

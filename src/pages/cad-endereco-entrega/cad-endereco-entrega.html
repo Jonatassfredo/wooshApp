@@ -3,24 +3,27 @@
         <ion-title>Endereço</ion-title>
         <ion-buttons right>
             <button ion-button clear (click)="salvar()">
-        Salvar
-      </button>
+                Salvar
+            </button>
             <button *ngIf="endereco._id" ion-button icon-only (click)="excluir()">
-        <ion-icon name="trash"></ion-icon>
-      </button>
+                <ion-icon name="trash"></ion-icon>
+            </button>
         </ion-buttons>
     </ion-navbar>
 </ion-header>
 <ion-content no-padding>
     <ion-list no-lines>
-
         <ion-item>
             <ion-label floating>Cidade</ion-label>
             <ion-input [(ngModel)]="endereco.cidade" type="text"></ion-input>
         </ion-item>
         <ion-item>
             <ion-label floating>UF</ion-label>
-            <ion-input [(ngModel)]="endereco.uf" type="text"></ion-input>
+            <ion-select [(ngModel)]="endereco.uf" cancelText="Cancelar" okText="Ok">
+                <ion-option value="{{ item }}" *ngFor="let item of UF">
+                    {{ item }}
+                </ion-option>
+            </ion-select>
         </ion-item>
         <ion-item>
             <ion-label floating>CEP</ion-label>

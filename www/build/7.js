@@ -119,6 +119,34 @@ var CadEnderecoEntregaPage = /** @class */ (function () {
         this.platform = platform;
         this.enderecoSrv = enderecoSrv;
         this.alertSrv = alertSrv;
+        this.UF = ["AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO",
+        ];
         var _ender = this.navParams.get("_endereco");
         if (_ender)
             this.endereco = _ender;
@@ -139,7 +167,7 @@ var CadEnderecoEntregaPage = /** @class */ (function () {
                                     excluirResult = _a.sent();
                                     if (excluirResult.success) {
                                         this.alertSrv.toast("Categoria excluída com sucesso!", "bottom");
-                                        this.navCtrl.setRoot("ListEnderecosEntregaPage");
+                                        this.navCtrl.push("ListEnderecosEntregaPage");
                                     }
                                     return [2 /*return*/];
                             }
@@ -183,7 +211,7 @@ var CadEnderecoEntregaPage = /** @class */ (function () {
     };
     CadEnderecoEntregaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-cad-endereco-entrega",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cad-endereco-entrega\cad-endereco-entrega.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Endereço</ion-title>\n        <ion-buttons right>\n            <button ion-button clear (click)="salvar()">\n        Salvar\n      </button>\n            <button *ngIf="endereco._id" ion-button icon-only (click)="excluir()">\n        <ion-icon name="trash"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list no-lines>\n\n        <ion-item>\n            <ion-label floating>Cidade</ion-label>\n            <ion-input [(ngModel)]="endereco.cidade" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>UF</ion-label>\n            <ion-input [(ngModel)]="endereco.uf" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>CEP</ion-label>\n            <ion-input [(ngModel)]="endereco.cep" type="number"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Bairro</ion-label>\n            <ion-input [(ngModel)]="endereco.bairro" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Rua</ion-label>\n            <ion-input [(ngModel)]="endereco.rua" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Número</ion-label>\n            <ion-input [(ngModel)]="endereco.numero" type="number"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Ponto de Referência</ion-label>\n            <ion-textarea [(ngModel)]="endereco.pontoReferencia" rows="2"></ion-textarea>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Orientações</ion-label>\n            <ion-textarea [(ngModel)]="endereco.orientacoes" rows="4"></ion-textarea>\n        </ion-item>\n\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cad-endereco-entrega\cad-endereco-entrega.html"*/
+            selector: "page-cad-endereco-entrega",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cad-endereco-entrega\cad-endereco-entrega.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Endereço</ion-title>\n        <ion-buttons right>\n            <button ion-button clear (click)="salvar()">\n                Salvar\n            </button>\n            <button *ngIf="endereco._id" ion-button icon-only (click)="excluir()">\n                <ion-icon name="trash"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list no-lines>\n        <ion-item>\n            <ion-label floating>Cidade</ion-label>\n            <ion-input [(ngModel)]="endereco.cidade" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>UF</ion-label>\n            <ion-select [(ngModel)]="endereco.uf" cancelText="Cancelar" okText="Ok">\n                <ion-option value="{{ item }}" *ngFor="let item of UF">\n                    {{ item }}\n                </ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>CEP</ion-label>\n            <ion-input [(ngModel)]="endereco.cep" type="number"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Bairro</ion-label>\n            <ion-input [(ngModel)]="endereco.bairro" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Rua</ion-label>\n            <ion-input [(ngModel)]="endereco.rua" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Número</ion-label>\n            <ion-input [(ngModel)]="endereco.numero" type="number"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Ponto de Referência</ion-label>\n            <ion-textarea [(ngModel)]="endereco.pontoReferencia" rows="2"></ion-textarea>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Orientações</ion-label>\n            <ion-textarea [(ngModel)]="endereco.orientacoes" rows="4"></ion-textarea>\n        </ion-item>\n\n    </ion-list>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cad-endereco-entrega\cad-endereco-entrega.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
