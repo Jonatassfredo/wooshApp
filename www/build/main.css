@@ -28195,6 +28195,12 @@ page-carrinho .valor h2 {
   font-size: 3.2rem;
 }
 
+page-carrinho .preco {
+  margin-top: 50px;
+  margin-bottom: -30px;
+  margin-left: 10px;
+}
+
 page-carrinho .botao {
   color: darkred;
   font-weight: bold;
@@ -28456,6 +28462,12 @@ page-produtos .titulo .cart {
   margin-top: 17px;
   margin-right: 15px;
   font-size: 1.7rem;
+}
+
+page-produtos .preco {
+  margin-top: 50px;
+  margin-bottom: -30px;
+  margin-left: 10px;
 }
 
 page-visualizar-produto .foto {

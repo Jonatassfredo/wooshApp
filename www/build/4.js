@@ -1,6 +1,6 @@
 webpackJsonp([4],{
 
-/***/ 321:
+/***/ 324:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_components_module__ = __webpack_require__(331);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__minha_conta__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__minha_conta__ = __webpack_require__(350);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -181,7 +181,7 @@ var QuantidadeComponent = /** @class */ (function () {
     ], QuantidadeComponent.prototype, "quantidadeAlterada", void 0);
     QuantidadeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'quantidade',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/'<div>\n  <button round ion-button icon-only color="light" (click)="remover()">\n    -\n  </button>\n  <span class="numero">{{numero}}</span>\n  <button round ion-button icon-only color="dark" (click)="adicionar()">\n    +\n  </button>\n</div>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/
+            selector: 'quantidade',template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/'<div>\n  <button round ion-button icon-only color="light" (click)="remover()">\n    -\n  </button>\n  <span class="numero">{{numero}}</span>\n  <button round ion-button icon-only color="dark" (click)="adicionar()">\n    +\n  </button>\n</div>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__["a" /* CarrinhoProvider */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["d" /* Events */]])
@@ -252,7 +252,7 @@ var TabComponent = /** @class */ (function () {
     ], TabComponent.prototype, "pagina", void 0);
     TabComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: "tab",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/'<ion-footer class="tabs">\n  <div class="tab" *ngFor="let item of tabs" [ngClass]="{\'active\': item.isSelect}" (click)="selecionarTab(item.path)">\n    <ion-icon name="{{item.icon}}"></ion-icon>\n    <p>{{item.label}}</p>\n  </div>\n</ion-footer>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/
+            selector: "tab",template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/'<ion-footer class="tabs">\n  <div class="tab" *ngFor="let item of tabs" [ngClass]="{\'active\': item.isSelect}" (click)="selecionarTab(item.path)">\n    <ion-icon name="{{item.icon}}"></ion-icon>\n    <p>{{item.label}}</p>\n  </div>\n</ion-footer>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* NavController */]])
     ], TabComponent);
@@ -263,7 +263,7 @@ var TabComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 347:
+/***/ 350:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -449,7 +449,7 @@ var MinhaContaPage = /** @class */ (function () {
     };
     MinhaContaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_5__angular_core__["m" /* Component */])({
-            selector: "page-minha-conta",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\minha-conta\minha-conta.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title class="titulo">Minha Conta</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="sair()">\n        <p class="sair">Sair</p>\n        <ion-icon name="exit"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <div class="imagem" [ngStyle]="{\'background-image\': \'url(\' + usuarioLogado.foto + \')\'}" (click)="mudarFoto()">\n  </div>\n  <div class="formulario">\n    <div class="btnSuporte">\n      <button ion-button round class="btnMsg" (click)="mensagens()">\n        <ion-icon name="chatboxes"></ion-icon>\n      </button>\n      <p class="suporte">Suporte</p>\n    </div>\n    <p>Nome</p>\n    <input type="text" placeholder="Nome" [(ngModel)]="usuarioLogado.nome">\n    <p>E-mail</p>\n    <input type="text" placeholder="Email" [(ngModel)]="usuarioLogado.email">\n    <p>CPF</p>\n    <input type="number" placeholder="CPF" [(ngModel)]="usuarioLogado.cpf" disabled="true">\n    <!-- <P>Telefone</P>\n        <input type="number" placeholder="Telefone" [(ngModel)]="usuarioLogado.telefone"> -->\n\n    <div class="botaoEndereco">\n      <button ion-button outline color="primary" round block (click)="adicionarEndereco()" style="margin-top: 20px;">\n        Endereços de entrega\n      </button>\n    </div>\n    <div class="botao">\n      <button ion-button outline color="primary" round block (click)="salvar()" style="margin-top: 10px;">\n        Salvar os dados\n      </button>\n    </div>\n  </div>\n  <div>\n    <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n    <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n  </div>\n</ion-content>\n<tab [pagina]="\'Minha Conta\'"></tab>\n'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\minha-conta\minha-conta.html"*/
+            selector: "page-minha-conta",template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\minha-conta\minha-conta.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title class="titulo">Minha Conta</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="sair()">\n        <p class="sair">Sair</p>\n        <ion-icon name="exit"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content>\n  <div class="imagem" [ngStyle]="{\'background-image\': \'url(\' + usuarioLogado.foto + \')\'}" (click)="mudarFoto()">\n  </div>\n  <div class="formulario">\n    <div class="btnSuporte">\n      <button ion-button round class="btnMsg" (click)="mensagens()">\n        <ion-icon name="chatboxes"></ion-icon>\n      </button>\n      <p class="suporte">Suporte</p>\n    </div>\n    <p>Nome</p>\n    <input type="text" placeholder="Nome" [(ngModel)]="usuarioLogado.nome">\n    <p>E-mail</p>\n    <input type="text" placeholder="Email" [(ngModel)]="usuarioLogado.email">\n    <p>CPF</p>\n    <input type="number" placeholder="CPF" [(ngModel)]="usuarioLogado.cpf" disabled="true">\n    <!-- <P>Telefone</P>\n        <input type="number" placeholder="Telefone" [(ngModel)]="usuarioLogado.telefone"> -->\n\n    <div class="botaoEndereco">\n      <button ion-button outline color="primary" round block (click)="adicionarEndereco()" style="margin-top: 20px;">\n        Endereços de entrega\n      </button>\n    </div>\n    <div class="botao">\n      <button ion-button outline color="primary" round block (click)="salvar()" style="margin-top: 10px;">\n        Salvar os dados\n      </button>\n    </div>\n  </div>\n  <div>\n    <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n    <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n  </div>\n</ion-content>\n<tab [pagina]="\'Minha Conta\'"></tab>\n'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\minha-conta\minha-conta.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_7_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_7_ionic_angular__["l" /* NavParams */],
