@@ -531,10 +531,9 @@ var CarrinhoProvider = /** @class */ (function () {
     };
     CarrinhoProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__http_http__["a" /* HttpProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__http_http__["a" /* HttpProvider */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["d" /* Events */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["d" /* Events */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__http_http__["a" /* HttpProvider */], __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["d" /* Events */]])
     ], CarrinhoProvider);
     return CarrinhoProvider;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=carrinho.js.map
