@@ -87,16 +87,20 @@ export class CarrinhoProvider {
     });
   }
 
-  public SalvarPedido(pedido: CarrinhoModel): Promise<HttpResultModel> {
+  public async SalvarPedido(pedido: CarrinhoModel): Promise<HttpResultModel> {
     let _pedido: any = {};
     this.usuario = UsuarioProvider.GetUsuario();
     _pedido.valorTotal = pedido.valorTotal;
     _pedido.itens = [];
     _pedido.enderecoEntregaId = pedido.enderecoEntregaId;
-    // _pedido.enderecoEntrega = pedido.enderecoEntrega;
     _pedido.usuarioNome = this.usuario.nome;
     _pedido.formaPagamento = pedido.formaPagamento;
-    console.log("pedido inteiro", _pedido);
+
+    _pedido.enderecoEntrega = {};
+    pedido.enderecoEntregaId = await this.http.get(`${ConfigHelper.Url}enderecoEntrega/${pedido.enderecoEntregaId}`);
+    pedido.enderecoEntrega = pedido.enderecoEntregaId.data;
+    _pedido.enderecoEntrega = pedido.enderecoEntrega;
+    // console.log("oooooooooooo", _pedido.enderecoEntrega);
 
     // pedido.enderecoEntrega.forEach(ender => {
     //   _pedido.enderecoEntrega.push({
@@ -110,7 +114,21 @@ export class CarrinhoProvider {
     //     uf: ender.uf
     //   });
     // });
-    // _pedido.enderecoEntrega = JSON.stringify(_pedido.enderecoEntrega);
+
+    // pedido.enderecoEntrega.forEach(end => {
+    //   _pedido.enderecoEntrega.push({
+    //     cidade: end.cidade,
+    //     rua: end.rua,
+    //     bairro: end.bairro,
+    //     cep: end.cep,
+    //     uf: end.uf,
+    //     observacoes: end.observacoes
+    //   });
+    // });
+
+    // console.log("ooooooooooooooooo", pedido.enderecoEntrega);
+
+    // _pedido.itens = JSON.stringify(_pedido.itens);
 
     pedido.itens.forEach(prod => {
       _pedido.itens.push({
@@ -121,10 +139,7 @@ export class CarrinhoProvider {
         valor: prod.valor
       });
     });
-    console.log("pedido", _pedido);
-
-    // _pedido.itens = JSON.stringify(_pedido.itens);
-
+    console.log("pedido inteiro", _pedido);
     return this.http.post(`${ConfigHelper.Url}pedido`, _pedido);
   }
 
