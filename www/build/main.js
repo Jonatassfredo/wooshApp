@@ -155,15 +155,15 @@ var map = {
 		8
 	],
 	"../pages/adm-categorias/adm-categorias.module": [
-		310,
+		311,
 		14
 	],
 	"../pages/adm-produto/adm-produto.module": [
-		312,
+		310,
 		6
 	],
 	"../pages/adm-produtos/adm-produtos.module": [
-		311,
+		312,
 		13
 	],
 	"../pages/cad-endereco-entrega/cad-endereco-entrega.module": [
@@ -171,19 +171,19 @@ var map = {
 		7
 	],
 	"../pages/cadastro/cadastro.module": [
-		315,
+		314,
 		12
 	],
 	"../pages/carrinho/carrinho.module": [
-		314,
+		315,
 		0
 	],
 	"../pages/categoria/categoria.module": [
-		317,
+		316,
 		5
 	],
 	"../pages/list-enderecos-entrega/list-enderecos-entrega.module": [
-		316,
+		317,
 		11
 	],
 	"../pages/login/login.module": [
@@ -203,15 +203,15 @@ var map = {
 		4
 	],
 	"../pages/produtos/produtos.module": [
-		323,
+		322,
 		1
 	],
 	"../pages/tab-categoria/tab-categoria.module": [
-		322,
+		324,
 		9
 	],
 	"../pages/visualizar-produto/visualizar-produto.module": [
-		324,
+		323,
 		3
 	]
 };
@@ -1117,21 +1117,21 @@ var AppModule = /** @class */ (function () {
             imports: [__WEBPACK_IMPORTED_MODULE_9__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_11__node_modules_angular_common_http__["b" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/adm-categoria/adm-categoria.module#AdmCategoriaPageModule', name: 'AdmCategoriaPage', segment: 'adm-categoria', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/adm-produto/adm-produto.module#AdmProdutoPageModule', name: 'AdmProdutoPage', segment: 'adm-produto', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/adm-categorias/adm-categorias.module#AdmCategoriasPageModule', name: 'AdmCategoriasPage', segment: 'adm-categorias', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/adm-produtos/adm-produtos.module#AdmProdutosPageModule', name: 'AdmProdutosPage', segment: 'adm-produtos', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/adm-produto/adm-produto.module#AdmProdutoPageModule', name: 'AdmProdutoPage', segment: 'adm-produto', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cad-endereco-entrega/cad-endereco-entrega.module#CadEnderecoEntregaPageModule', name: 'CadEnderecoEntregaPage', segment: 'cad-endereco-entrega', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/carrinho/carrinho.module#CarrinhoPageModule', name: 'CarrinhoPage', segment: 'carrinho', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/list-enderecos-entrega/list-enderecos-entrega.module#ListEnderecosEntregaPageModule', name: 'ListEnderecosEntregaPage', segment: 'list-enderecos-entrega', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/carrinho/carrinho.module#CarrinhoPageModule', name: 'CarrinhoPage', segment: 'carrinho', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/categoria/categoria.module#CategoriaPageModule', name: 'CategoriaPage', segment: 'categoria', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/list-enderecos-entrega/list-enderecos-entrega.module#ListEnderecosEntregaPageModule', name: 'ListEnderecosEntregaPage', segment: 'list-enderecos-entrega', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mensagens/mensagens.module#MensagensPageModule', name: 'MensagensPage', segment: 'mensagens', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/meus-pedidos/meus-pedidos.module#MeusPedidosPageModule', name: 'MeusPedidosPage', segment: 'meus-pedidos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/minha-conta/minha-conta.module#MinhaContaPageModule', name: 'MinhaContaPage', segment: 'minha-conta', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tab-categoria/tab-categoria.module#TabCategoriaPageModule', name: 'TabCategoriaPage', segment: 'tab-categoria', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/produtos/produtos.module#ProdutosPageModule', name: 'ProdutosPage', segment: 'produtos', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/visualizar-produto/visualizar-produto.module#VisualizarProdutoPageModule', name: 'VisualizarProdutoPage', segment: 'visualizar-produto', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/visualizar-produto/visualizar-produto.module#VisualizarProdutoPageModule', name: 'VisualizarProdutoPage', segment: 'visualizar-produto', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tab-categoria/tab-categoria.module#TabCategoriaPageModule', name: 'TabCategoriaPage', segment: 'tab-categoria', priority: 'low', defaultHistory: [] }
                     ]
                 })],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicApp */]],
