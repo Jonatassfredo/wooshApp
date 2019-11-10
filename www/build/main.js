@@ -159,11 +159,11 @@ var map = {
 		14
 	],
 	"../pages/adm-produto/adm-produto.module": [
-		311,
+		312,
 		6
 	],
 	"../pages/adm-produtos/adm-produtos.module": [
-		312,
+		311,
 		13
 	],
 	"../pages/cad-endereco-entrega/cad-endereco-entrega.module": [
@@ -171,19 +171,19 @@ var map = {
 		7
 	],
 	"../pages/cadastro/cadastro.module": [
-		314,
+		315,
 		12
 	],
 	"../pages/carrinho/carrinho.module": [
-		315,
+		314,
 		0
 	],
 	"../pages/categoria/categoria.module": [
-		316,
+		317,
 		5
 	],
 	"../pages/list-enderecos-entrega/list-enderecos-entrega.module": [
-		317,
+		316,
 		11
 	],
 	"../pages/login/login.module": [
@@ -203,11 +203,11 @@ var map = {
 		4
 	],
 	"../pages/produtos/produtos.module": [
-		322,
+		323,
 		1
 	],
 	"../pages/tab-categoria/tab-categoria.module": [
-		323,
+		322,
 		9
 	],
 	"../pages/visualizar-produto/visualizar-produto.module": [
@@ -856,7 +856,7 @@ var MensagensPage = /** @class */ (function () {
     ], MensagensPage.prototype, "content", void 0);
     MensagensPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-mensagens",template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\mensagens\mensagens.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Mensagens</ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only (click)="sair()">\n                <ion-icon name="exit"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-list>\n        <ion-item *ngFor="let chat of chats" no-lines>\n            <div class="chat-status" text-center *ngIf="chat.mensagentype===\'join\'||chat.type===\'sair\';else message">\n                <span class="chat-date">{{chat.sendDate | date:\'short\'}}</span>\n                <span class="chat-content-center">{{chat.mensagem}}</span>\n            </div>\n            <ng-template #message>\n                <div class="alinhaMsg">\n                    <ion-card class="myMessage" text-right *ngIf="messageType === \'userMessage\'">\n                        <ion-card-header>\n                            <span class="msg-name">\n                                <strong>Eu</strong>\n                                em\n                            </span>\n                            <span class="msg-date">{{chat.sendDate | date:\'dd/MM/yyyy, HH:mm\'}}</span>\n                        </ion-card-header>\n                        <ion-card-content>\n                            <div class="chat-message" text-right>\n                                <div class="right-bubble">\n                                    <p class="msg-text" text-wrap>\n                                        {{chat.mensagem}}\n                                    </p>\n                                </div>\n                            </div>\n                        </ion-card-content>\n                    </ion-card>\n                </div>\n                <ion-card text-left *ngIf="messageType !== \'userMessage\'">\n                    <ion-card-header>\n                        <span class="msg-name">\n                            <strong>Atendente</strong>\n                            em\n                        </span>\n                        <span class="msg-date">\n                            {{chat.sendDate | date:\'dd/MM/yyyy hh:mm\' }}\n                        </span>\n                    </ion-card-header>\n                    <ion-card-content>\n                        <div class="chat-message" text-left>\n                            <div class="left-bubble">\n                                <p>{{chat.mensagem}}</p>\n                            </div>\n                        </div>\n                    </ion-card-content>\n                </ion-card>\n            </ng-template>\n        </ion-item>\n    </ion-list>\n</ion-content>\n\n<ion-footer>\n    <ion-grid>\n        <ion-row>\n            <ion-col col-10>\n                <ion-input type="text" placeholder="Escreva uma mensagem" [(ngModel)]="data.mensagem" name="mensagem"\n                    class="fontsize">\n                </ion-input>\n            </ion-col>\n            <ion-col col-2 (click)="enviarMensagem()" class="iconeMsg">\n                <div>\n                    <ion-icon color="primary" name="paper-plane"></ion-icon>\n                </div>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-footer>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\mensagens\mensagens.html"*/
+            selector: "page-mensagens",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\mensagens\mensagens.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Mensagens</ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only (click)="sair()">\n                <ion-icon name="exit"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-list>\n        <ion-item *ngFor="let chat of chats" no-lines>\n            <div class="chat-status" text-center *ngIf="chat.mensagentype===\'join\'||chat.type===\'sair\';else message">\n                <span class="chat-date">{{chat.sendDate | date:\'short\'}}</span>\n                <span class="chat-content-center">{{chat.mensagem}}</span>\n            </div>\n            <ng-template #message>\n                <div class="alinhaMsg">\n                    <ion-card class="myMessage" text-right *ngIf="chat.type === \'userMessage\'">\n                        <ion-card-header>\n                            <span class="msg-name">\n                                <strong>Cliente</strong>\n                                em\n                            </span>\n                            <span class="msg-date">{{chat.sendDate | date:\'dd/MM/yyyy\'}}</span>\n                        </ion-card-header>\n                        <ion-card-content>\n                            <div class="chat-message" text-right>\n                                <div class="right-bubble">\n                                    <p class="msg-text" text-wrap>\n                                        {{chat.mensagem}}\n                                    </p>\n                                </div>\n                            </div>\n                        </ion-card-content>\n                    </ion-card>\n                </div>\n                <div class="alinhaMsgOp">\n                    <ion-card class="opMessage" text-left *ngIf="chat.type === \'operadorMessage\'">\n                        <ion-card-header>\n                            <span class="msg-name">\n                                <strong>Operador</strong>\n                                em\n                            </span>\n                            <span class="msg-date">{{chat.sendDate | date:\'dd/MM/yyyy\'}}</span>\n                        </ion-card-header>\n                        <ion-card-content>\n                            <div class="chat-message" text-left>\n                                <div class="right-bubble">\n                                    <p class="msg-text" text-wrap>\n                                        {{chat.mensagem}}\n                                    </p>\n                                </div>\n                            </div>\n                        </ion-card-content>\n                    </ion-card>\n                </div>\n            </ng-template>\n        </ion-item>\n    </ion-list>\n</ion-content>\n\n<ion-footer>\n    <ion-grid>\n        <ion-row>\n            <ion-col col-10>\n                <ion-input type="text" placeholder="Escreva uma mensagem" [(ngModel)]="data.mensagem" name="mensagem"\n                    class="fontsize">\n                </ion-input>\n            </ion-col>\n            <ion-col col-2 (click)="enviarMensagem()" class="iconeMsg">\n                <div>\n                    <ion-icon color="primary" name="paper-plane"></ion-icon>\n                </div>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-footer>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\mensagens\mensagens.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
     ], MensagensPage);
@@ -1020,7 +1020,7 @@ var CategoriaPage = /** @class */ (function () {
     };
     CategoriaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: "page-categoria",template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\categoria\categoria.html"*/'<ion-content no-padding>\n    <div class="admin">\n        <button ion-button icon-only clear color="light" (click)="adminOptions()">\n      <ion-icon name="settings"></ion-icon>\n    </button>\n    </div>\n    <div class="blur"></div>\n    <p class="chamada">Categorias</p>\n    <div class="categoria" *ngFor="let item of categorias | orderBy:\'titulo\'" (click)="selecionarProduto(item)" tappable>\n        <div class="imagem" [ngStyle]="{\'background-image\': \'url(\' + item.foto + \')\'}">\n\n        </div>\n        <p>\n            {{item.titulo}}\n        </p>\n    </div>\n\n</ion-content>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\categoria\categoria.html"*/
+            selector: "page-categoria",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\categoria\categoria.html"*/'<ion-content no-padding>\n    <div class="admin">\n        <button ion-button icon-only clear color="light" (click)="adminOptions()">\n      <ion-icon name="settings"></ion-icon>\n    </button>\n    </div>\n    <div class="blur"></div>\n    <p class="chamada">Categorias</p>\n    <div class="categoria" *ngFor="let item of categorias | orderBy:\'titulo\'" (click)="selecionarProduto(item)" tappable>\n        <div class="imagem" [ngStyle]="{\'background-image\': \'url(\' + item.foto + \')\'}">\n\n        </div>\n        <p>\n            {{item.titulo}}\n        </p>\n    </div>\n\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\categoria\categoria.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */],
@@ -1118,19 +1118,19 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/adm-categoria/adm-categoria.module#AdmCategoriaPageModule', name: 'AdmCategoriaPage', segment: 'adm-categoria', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/adm-categorias/adm-categorias.module#AdmCategoriasPageModule', name: 'AdmCategoriasPage', segment: 'adm-categorias', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/adm-produto/adm-produto.module#AdmProdutoPageModule', name: 'AdmProdutoPage', segment: 'adm-produto', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/adm-produtos/adm-produtos.module#AdmProdutosPageModule', name: 'AdmProdutosPage', segment: 'adm-produtos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/adm-produto/adm-produto.module#AdmProdutoPageModule', name: 'AdmProdutoPage', segment: 'adm-produto', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cad-endereco-entrega/cad-endereco-entrega.module#CadEnderecoEntregaPageModule', name: 'CadEnderecoEntregaPage', segment: 'cad-endereco-entrega', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/carrinho/carrinho.module#CarrinhoPageModule', name: 'CarrinhoPage', segment: 'carrinho', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/categoria/categoria.module#CategoriaPageModule', name: 'CategoriaPage', segment: 'categoria', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/list-enderecos-entrega/list-enderecos-entrega.module#ListEnderecosEntregaPageModule', name: 'ListEnderecosEntregaPage', segment: 'list-enderecos-entrega', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/categoria/categoria.module#CategoriaPageModule', name: 'CategoriaPage', segment: 'categoria', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mensagens/mensagens.module#MensagensPageModule', name: 'MensagensPage', segment: 'mensagens', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/meus-pedidos/meus-pedidos.module#MeusPedidosPageModule', name: 'MeusPedidosPage', segment: 'meus-pedidos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/minha-conta/minha-conta.module#MinhaContaPageModule', name: 'MinhaContaPage', segment: 'minha-conta', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/produtos/produtos.module#ProdutosPageModule', name: 'ProdutosPage', segment: 'produtos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tab-categoria/tab-categoria.module#TabCategoriaPageModule', name: 'TabCategoriaPage', segment: 'tab-categoria', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/produtos/produtos.module#ProdutosPageModule', name: 'ProdutosPage', segment: 'produtos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/visualizar-produto/visualizar-produto.module#VisualizarProdutoPageModule', name: 'VisualizarProdutoPage', segment: 'visualizar-produto', priority: 'low', defaultHistory: [] }
                     ]
                 })],
@@ -1260,7 +1260,7 @@ var MyApp = /** @class */ (function () {
         __WEBPACK_IMPORTED_MODULE_5_firebase__["initializeApp"](config);
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */],

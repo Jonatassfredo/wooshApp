@@ -1,6 +1,6 @@
 webpackJsonp([11],{
 
-/***/ 317:
+/***/ 316:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -122,7 +122,7 @@ var ListEnderecosEntregaPage = /** @class */ (function () {
     };
     ListEnderecosEntregaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-list-enderecos-entrega",template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\list-enderecos-entrega\list-enderecos-entrega.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Endereços de Entrega</ion-title>\n        <ion-buttons right>\n            <button ion-button icon-only (click)="addOrEdit({})">\n        <ion-icon name="add"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list lines>\n        <ion-item text-wrap *ngIf="lista.length == 0">\n            Você não possui endereço de entrega cadastrado.\n        </ion-item>\n        <ion-item *ngFor="let item of lista" text-wrap (click)="addOrEdit(item)">\n            Rua {{item.rua}}, {{item.numero}}, Bairro {{item.bairro}}\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\list-enderecos-entrega\list-enderecos-entrega.html"*/
+            selector: "page-list-enderecos-entrega",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\list-enderecos-entrega\list-enderecos-entrega.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Endereços de Entrega</ion-title>\n        <ion-buttons right>\n            <button ion-button icon-only (click)="addOrEdit({})">\n        <ion-icon name="add"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list lines>\n        <ion-item text-wrap *ngIf="lista.length == 0">\n            Você não possui endereço de entrega cadastrado.\n        </ion-item>\n        <ion-item *ngFor="let item of lista" text-wrap (click)="addOrEdit(item)">\n            Rua {{item.rua}}, {{item.numero}}, Bairro {{item.bairro}}\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\list-enderecos-entrega\list-enderecos-entrega.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],

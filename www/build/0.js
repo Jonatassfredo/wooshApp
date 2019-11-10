@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 315:
+/***/ 314:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,7 +10,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_components_module__ = __webpack_require__(331);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__carrinho__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__carrinho__ = __webpack_require__(341);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -328,7 +328,7 @@ var QuantidadeComponent = /** @class */ (function () {
     ], QuantidadeComponent.prototype, "quantidadeAlterada", void 0);
     QuantidadeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'quantidade',template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/'<div>\n  <button round ion-button icon-only color="light" (click)="remover()">\n    -\n  </button>\n  <span class="numero">{{numero}}</span>\n  <button round ion-button icon-only color="dark" (click)="adicionar()">\n    +\n  </button>\n</div>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/
+            selector: 'quantidade',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/'<div>\n  <button round ion-button icon-only color="light" (click)="remover()">\n    -\n  </button>\n  <span class="numero">{{numero}}</span>\n  <button round ion-button icon-only color="dark" (click)="adicionar()">\n    +\n  </button>\n</div>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__["a" /* CarrinhoProvider */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["d" /* Events */]])
@@ -399,7 +399,7 @@ var TabComponent = /** @class */ (function () {
     ], TabComponent.prototype, "pagina", void 0);
     TabComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: "tab",template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/'<ion-footer class="tabs">\n  <div class="tab" *ngFor="let item of tabs" [ngClass]="{\'active\': item.isSelect}" (click)="selecionarTab(item.path)">\n    <ion-icon name="{{item.icon}}"></ion-icon>\n    <p>{{item.label}}</p>\n  </div>\n</ion-footer>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/
+            selector: "tab",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/'<ion-footer class="tabs">\n  <div class="tab" *ngFor="let item of tabs" [ngClass]="{\'active\': item.isSelect}" (click)="selecionarTab(item.path)">\n    <ion-icon name="{{item.icon}}"></ion-icon>\n    <p>{{item.label}}</p>\n  </div>\n</ion-footer>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* NavController */]])
     ], TabComponent);
@@ -425,7 +425,7 @@ var EnderecoEntregaModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 342:
+/***/ 341:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -585,7 +585,7 @@ var CarrinhoPage = /** @class */ (function () {
     };
     CarrinhoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: "page-carrinho",template:/*ion-inline-start:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\carrinho\carrinho.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n\n        <ion-title>Meu Carrinho</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content no-padding>\n\n    <div class="valor">\n\n        <h2>{{ carrinho.valorTotal | real }}</h2>\n\n        <small>seu pedido atual</small>\n\n    </div>\n\n    <div class="botao-finalizar">\n\n        <div class="botao" tappable (click)="finalizarPedido()">\n\n            Finalizar Pedido\n\n        </div>\n\n    </div>\n\n\n\n    <div class="entrega">\n\n        <ion-item no-lines style="border-radius: 10px;">\n\n            <ion-label class="entregaLabel" no-lines>\n\n                Entregar em:\n\n            </ion-label>\n\n            <ion-select [(ngModel)]="carrinho.enderecoEntregaId" cancelText="Cancelar" okText="Ok">\n\n                <ion-option value="{{ item._id }}" *ngFor="let item of enderecos">\n\n                    {{ item.rua }}, {{ item.numero }}, {{ item.bairro }}\n\n                </ion-option>\n\n            </ion-select>\n\n        </ion-item>\n\n    </div>\n\n    <div>\n\n        <ion-item no-lines style="border-radius: 10px;">\n\n            <ion-label class="entregaLabel" no-lines>\n\n                Forma de Pagamento:\n\n            </ion-label>\n\n            <ion-select [(ngModel)]="carrinho.formaPagamento" cancelText="Cancelar" okText="Ok">\n\n                <ion-option value="{{ item }}" *ngFor="let item of formaPagamento">\n\n                    {{ item }}\n\n                </ion-option>\n\n            </ion-select>\n\n        </ion-item>\n\n    </div>\n\n\n\n    <div class="produtos">\n\n        <div class="produto" *ngFor="let item of carrinho.itens" tappable>\n\n            <div class="imagem" [ngStyle]="{ \'background-image\': \'url(\' + item.Produto.foto + \')\' }"></div>\n\n            <div class="titulo">{{ item.Produto.nome }}</div>\n\n            <div class="descricao">{{ item.Produto.descricao }}</div>\n\n            <div class="preco">{{ item.Produto.preco | real }}</div>\n\n            <div class="quantidade">\n\n                <quantidade [produto]="item.Produto" (quantidadeAlterada)="quantidadeAlterada(item.Produto, $event)">\n\n                </quantidade>\n\n            </div>\n\n            <ion-item>\n\n                <ion-label floating>Observações</ion-label>\n\n                <ion-input [(ngModel)]="item.Observacoes" type="text"></ion-input>\n\n            </ion-item>\n\n        </div>\n\n    </div>\n\n    <div>\n\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n\n    </div>\n\n</ion-content>\n\n<tab [pagina]="\'Meu Carrinho\'"></tab>'/*ion-inline-end:"e:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\carrinho\carrinho.html"*/
+            selector: "page-carrinho",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\carrinho\carrinho.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n\n        <ion-title>Meu Carrinho</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content no-padding>\n\n    <div class="valor">\n\n        <h2>{{ carrinho.valorTotal | real }}</h2>\n\n        <small>seu pedido atual</small>\n\n    </div>\n\n    <div class="botao-finalizar">\n\n        <div class="botao" tappable (click)="finalizarPedido()">\n\n            Finalizar Pedido\n\n        </div>\n\n    </div>\n\n\n\n    <div class="entrega">\n\n        <ion-item no-lines style="border-radius: 10px;">\n\n            <ion-label class="entregaLabel" no-lines>\n\n                Entregar em:\n\n            </ion-label>\n\n            <ion-select [(ngModel)]="carrinho.enderecoEntregaId" cancelText="Cancelar" okText="Ok">\n\n                <ion-option value="{{ item._id }}" *ngFor="let item of enderecos">\n\n                    {{ item.rua }}, {{ item.numero }}, {{ item.bairro }}\n\n                </ion-option>\n\n            </ion-select>\n\n        </ion-item>\n\n    </div>\n\n    <div>\n\n        <ion-item no-lines style="border-radius: 10px;">\n\n            <ion-label class="entregaLabel" no-lines>\n\n                Forma de Pagamento:\n\n            </ion-label>\n\n            <ion-select [(ngModel)]="carrinho.formaPagamento" cancelText="Cancelar" okText="Ok">\n\n                <ion-option value="{{ item }}" *ngFor="let item of formaPagamento">\n\n                    {{ item }}\n\n                </ion-option>\n\n            </ion-select>\n\n        </ion-item>\n\n    </div>\n\n\n\n    <div class="produtos">\n\n        <div class="produto" *ngFor="let item of carrinho.itens" tappable>\n\n            <div class="imagem" [ngStyle]="{ \'background-image\': \'url(\' + item.Produto.foto + \')\' }"></div>\n\n            <div class="titulo">{{ item.Produto.nome }}</div>\n\n            <div class="descricao">{{ item.Produto.descricao }}</div>\n\n            <div class="preco">{{ item.Produto.preco | real }}</div>\n\n            <div class="quantidade">\n\n                <quantidade [produto]="item.Produto" (quantidadeAlterada)="quantidadeAlterada(item.Produto, $event)">\n\n                </quantidade>\n\n            </div>\n\n            <ion-item>\n\n                <ion-label floating>Observações</ion-label>\n\n                <ion-input [(ngModel)]="item.Observacoes" type="text"></ion-input>\n\n            </ion-item>\n\n        </div>\n\n    </div>\n\n    <div>\n\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n\n    </div>\n\n</ion-content>\n\n<tab [pagina]="\'Meu Carrinho\'"></tab>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\carrinho\carrinho.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["l" /* NavParams */],

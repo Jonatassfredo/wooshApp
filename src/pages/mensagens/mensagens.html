@@ -18,13 +18,13 @@
             </div>
             <ng-template #message>
                 <div class="alinhaMsg">
-                    <ion-card class="myMessage" text-right *ngIf="messageType === 'userMessage'">
+                    <ion-card class="myMessage" text-right *ngIf="chat.type === 'userMessage'">
                         <ion-card-header>
                             <span class="msg-name">
-                                <strong>Eu</strong>
+                                <strong>Cliente</strong>
                                 em
                             </span>
-                            <span class="msg-date">{{chat.sendDate | date:'dd/MM/yyyy, HH:mm'}}</span>
+                            <span class="msg-date">{{chat.sendDate | date:'dd/MM/yyyy'}}</span>
                         </ion-card-header>
                         <ion-card-content>
                             <div class="chat-message" text-right>
@@ -37,24 +37,26 @@
                         </ion-card-content>
                     </ion-card>
                 </div>
-                <ion-card text-left *ngIf="messageType !== 'userMessage'">
-                    <ion-card-header>
-                        <span class="msg-name">
-                            <strong>Atendente</strong>
-                            em
-                        </span>
-                        <span class="msg-date">
-                            {{chat.sendDate | date:'dd/MM/yyyy hh:mm' }}
-                        </span>
-                    </ion-card-header>
-                    <ion-card-content>
-                        <div class="chat-message" text-left>
-                            <div class="left-bubble">
-                                <p>{{chat.mensagem}}</p>
+                <div class="alinhaMsgOp">
+                    <ion-card class="opMessage" text-left *ngIf="chat.type === 'operadorMessage'">
+                        <ion-card-header>
+                            <span class="msg-name">
+                                <strong>Operador</strong>
+                                em
+                            </span>
+                            <span class="msg-date">{{chat.sendDate | date:'dd/MM/yyyy'}}</span>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <div class="chat-message" text-left>
+                                <div class="right-bubble">
+                                    <p class="msg-text" text-wrap>
+                                        {{chat.mensagem}}
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </ion-card-content>
-                </ion-card>
+                        </ion-card-content>
+                    </ion-card>
+                </div>
             </ng-template>
         </ion-item>
     </ion-list>
