@@ -110,14 +110,21 @@ var CadastroPage = /** @class */ (function () {
             var cadastroResult;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.usuarioSrv.register(this.usuario)];
+                    case 0:
+                        if (!this.validaCpf(this.usuario.cpf)) return [3 /*break*/, 2];
+                        return [4 /*yield*/, this.usuarioSrv.register(this.usuario)];
                     case 1:
                         cadastroResult = _a.sent();
                         if (cadastroResult.success) {
                             this.alertSrv.toast('Cadastro realizado com sucesso!', 'bottom');
                             this.navCtrl.setRoot('LoginPage');
+                            // console.log('oooooooooo', this.validaCpf(this.usuario.cpf));
                         }
-                        return [2 /*return*/];
+                        return [3 /*break*/, 3];
+                    case 2:
+                        this.alertSrv.toast('CPF Inválido!', 'bottom');
+                        _a.label = 3;
+                    case 3: return [2 /*return*/];
                 }
             });
         });
@@ -125,9 +132,66 @@ var CadastroPage = /** @class */ (function () {
     CadastroPage.prototype.cancelar = function () {
         this.navCtrl.setRoot('LoginPage');
     };
+    //valida cpf
+    CadastroPage.prototype.validaCpf = function (cpf) {
+        if (cpf == null) {
+            return false;
+        }
+        if (cpf.length != 11) {
+            return false;
+        }
+        if ((cpf == '00000000000') || (cpf == '11111111111') || (cpf == '22222222222') || (cpf == '33333333333') || (cpf == '44444444444') || (cpf == '55555555555') || (cpf == '66666666666') || (cpf == '77777777777') || (cpf == '88888888888') || (cpf == '99999999999')) {
+            return false;
+        }
+        var numero = 0;
+        var caracter = '';
+        var numeros = '0123456789';
+        var j = 10;
+        var somatorio = 0;
+        var resto = 0;
+        var digito1 = 0;
+        var digito2 = 0;
+        var cpfAux = '';
+        cpfAux = cpf.substring(0, 9);
+        for (var i = 0; i < 9; i++) {
+            caracter = cpfAux.charAt(i);
+            if (numeros.search(caracter) == -1) {
+                return false;
+            }
+            numero = Number(caracter);
+            somatorio = somatorio + (numero * j);
+            j--;
+        }
+        resto = somatorio % 11;
+        digito1 = 11 - resto;
+        if (digito1 > 9) {
+            digito1 = 0;
+        }
+        j = 11;
+        somatorio = 0;
+        cpfAux = cpfAux + digito1;
+        for (var i = 0; i < 10; i++) {
+            caracter = cpfAux.charAt(i);
+            numero = Number(caracter);
+            somatorio = somatorio + (numero * j);
+            j--;
+        }
+        resto = somatorio % 11;
+        digito2 = 11 - resto;
+        if (digito2 > 9) {
+            digito2 = 0;
+        }
+        cpfAux = cpfAux + digito2;
+        if (cpf != cpfAux) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    };
     CadastroPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'page-cadastro',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cadastro\cadastro.html"*/'<ion-content padding class="backImage">\n  <div>\n    <img src="assets/imagens/logo.png" class="logo">\n    <!-- <span>Woosh</span> -->\n  </div>\n  <ion-list no-lines class="list-transparent">\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.nome" type="text" placeholder="Nome"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.email" type="text" placeholder="E-mail"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.cpf" type="number" placeholder="CPF" #input maxlength="10"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.senha" type="password" placeholder="Senha"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.senhaConfirmacao" type="password" placeholder="Confirmar Senha"></ion-input>\n    </ion-item>\n  </ion-list>\n  <div>\n    <ion-grid>\n      <ion-row>\n        <button ion-button block round color="secondary" (click)="cadastrar()" class=\'botao\'>\n          Cadastrar\n        </button>\n      </ion-row>\n      <ion-row>\n        <button ion-button block outline round color="secondary" (click)="cancelar()" class=\'botao\'>\n          Cancelar\n        </button>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>\n'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cadastro\cadastro.html"*/,
+            selector: 'page-cadastro',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cadastro\cadastro.html"*/'<ion-content padding class="backImage">\n  <div>\n    <img src="assets/imagens/logo.png" class="logo">\n    <!-- <span>Woosh</span> -->\n  </div>\n  <ion-list no-lines class="list-transparent">\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.nome" type="text" placeholder="Nome"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.email" type="text" placeholder="E-mail"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.cpf" type="tel" placeholder="CPF" #input maxlength="11"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.senha" type="password" placeholder="Senha"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.senhaConfirmacao" type="password" placeholder="Confirmar Senha"></ion-input>\n    </ion-item>\n  </ion-list>\n  <div>\n    <ion-grid>\n      <ion-row>\n        <button ion-button block round color="secondary" (click)="cadastrar()" class=\'botao\'>\n          Cadastrar\n        </button>\n      </ion-row>\n      <ion-row>\n        <button ion-button block outline round color="secondary" (click)="cancelar()" class=\'botao\'>\n          Cancelar\n        </button>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cadastro\cadastro.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["l" /* NavParams */],
