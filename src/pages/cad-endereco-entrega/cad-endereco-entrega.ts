@@ -84,7 +84,7 @@ export class CadEnderecoEntregaPage {
     }
     if (sucesso) {
       this.alertSrv.toast("Endereço salvo com sucesso!", "bottom");
-      this.navCtrl.setRoot("ListEnderecosEntregaPage");
+      this.navCtrl.setRoot("MinhaContaPage");
     }
   }
 }

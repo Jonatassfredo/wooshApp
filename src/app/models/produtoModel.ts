@@ -6,4 +6,5 @@ export class ProdutoModel {
   foto: string;
   categoriaId: any;
   observacoes: string;
+  ativo: boolean;
 }

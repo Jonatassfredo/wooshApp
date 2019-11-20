@@ -13,7 +13,7 @@ export class HttpProvider {
     private spinnerSrv: SpinnerProvider,
     private alertSrv: AlertProvider,
     private networkSrv: NetworkProvider
-  ) {}
+  ) { }
 
   public createHeader(header?: HttpHeaders): HttpHeaders {
     if (!header) {
@@ -90,7 +90,7 @@ export class HttpProvider {
         );
       } else {
         this.alertSrv.toast(
-          "Você está Offline, e infelizmente não pode ser enviado os dados!",
+          "Você está Offline, os dados não podem ser enviados!",
           "bottom"
         );
         resolve({ success: true, data: [], err: undefined });
