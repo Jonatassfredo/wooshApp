@@ -1,16 +1,16 @@
 webpackJsonp([2],{
 
-/***/ 320:
+/***/ 319:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MeusPedidosPageModule", function() { return MeusPedidosPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pipes_pipes_module__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pipes_pipes_module__ = __webpack_require__(326);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__meus_pedidos__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__meus_pedidos__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_module__ = __webpack_require__(330);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var MeusPedidosPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 325:
+/***/ 324:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74,7 +74,7 @@ var UtilsHelper = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 326:
+/***/ 325:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -89,14 +89,14 @@ var ProdutoModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 327:
+/***/ 326:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PipesModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__real_real__ = __webpack_require__(328);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__order_by_order_by__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__real_real__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__order_by_order_by__ = __webpack_require__(328);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -125,13 +125,13 @@ var PipesModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 328:
+/***/ 327:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RealPipe; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_helpers_utilsHelper__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_helpers_utilsHelper__ = __webpack_require__(324);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -162,13 +162,13 @@ var RealPipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 329:
+/***/ 328:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrderByPipe; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_helpers_utilsHelper__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_helpers_utilsHelper__ = __webpack_require__(324);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -203,7 +203,7 @@ var OrderByPipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 330:
+/***/ 329:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -217,15 +217,15 @@ var AcaoCarrinhoEnum;
 
 /***/ }),
 
-/***/ 331:
+/***/ 330:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__quantidade_quantidade__ = __webpack_require__(332);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tab_tab__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__quantidade_quantidade__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tab_tab__ = __webpack_require__(332);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -255,16 +255,16 @@ var ComponentsModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 332:
+/***/ 331:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuantidadeComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_models_produtoModel__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_models_produtoModel__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_enums_AcaoCarrinhoEnum__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_enums_AcaoCarrinhoEnum__ = __webpack_require__(329);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_helpers_configHelper__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -328,7 +328,7 @@ var QuantidadeComponent = /** @class */ (function () {
     ], QuantidadeComponent.prototype, "quantidadeAlterada", void 0);
     QuantidadeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'quantidade',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\components\quantidade\quantidade.html"*/'<div>\n  <button round ion-button icon-only color="light" (click)="remover()">\n    -\n  </button>\n  <span class="numero">{{numero}}</span>\n  <button round ion-button icon-only color="dark" (click)="adicionar()">\n    +\n  </button>\n</div>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\components\quantidade\quantidade.html"*/
+            selector: 'quantidade',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/'<div>\n  <button round ion-button icon-only color="light" (click)="remover()">\n    -\n  </button>\n  <span class="numero">{{numero}}</span>\n  <button round ion-button icon-only color="dark" (click)="adicionar()">\n    +\n  </button>\n</div>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\quantidade\quantidade.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_carrinho_carrinho__["a" /* CarrinhoProvider */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["d" /* Events */]])
@@ -340,12 +340,12 @@ var QuantidadeComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 333:
+/***/ 332:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -399,7 +399,7 @@ var TabComponent = /** @class */ (function () {
     ], TabComponent.prototype, "pagina", void 0);
     TabComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: "tab",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\components\tab\tab.html"*/'<ion-footer class="tabs">\n  <div class="tab" *ngFor="let item of tabs" [ngClass]="{\'active\': item.isSelect}" (click)="selecionarTab(item.path)">\n    <ion-icon name="{{item.icon}}"></ion-icon>\n    <p>{{item.label}}</p>\n  </div>\n</ion-footer>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\components\tab\tab.html"*/
+            selector: "tab",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/'<ion-footer class="tabs">\n  <div class="tab" *ngFor="let item of tabs" [ngClass]="{\'active\': item.isSelect}" (click)="selecionarTab(item.path)">\n    <ion-icon name="{{item.icon}}"></ion-icon>\n    <p>{{item.label}}</p>\n  </div>\n</ion-footer>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\components\tab\tab.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* NavController */]])
     ], TabComponent);
@@ -410,15 +410,15 @@ var TabComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 345:
+/***/ 344:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MeusPedidosPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_carrinho_carrinho__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_carrinho_carrinho__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_models_ListaPedidosModel__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_models_ListaPedidosModel__ = __webpack_require__(345);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -506,7 +506,7 @@ var MeusPedidosPage = /** @class */ (function () {
     };
     MeusPedidosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-meus-pedidos',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\meus-pedidos\meus-pedidos.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Meus Pedidos</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-card *ngFor="let item of lista" style="border-radius: 10px;">\n        <ion-card-header icon-left>\n            <ion-icon name="cart"></ion-icon>\n            Pedido realizado em <strong>{{ item.dataPedido | date:\'dd/MM/yyyy, HH:mm\' }}</strong>\n        </ion-card-header>\n        <ion-card-content>\n            <p>Status: <strong> {{ item.status}}</strong></p>\n            <ion-item>\n                <p><strong>Produtos:</strong></p>\n                <br>\n                <div *ngFor="let produto of item.itens">\n                    <!-- <td>{{produto.quantidade}}</td>\n                                    <td>{{produto.nomeProd}}</td>\n                                    <td>{{produto.observacoes}}</td> -->\n                    <p>Produto: <strong>{{produto.nomeProd}}</strong></p>\n                    <p>Quantidade: <strong>{{produto.quantidade}}</strong></p>\n                    <!-- <strong>Produto ID: <strong>{{produto.produtoId}}</strong></p> -->\n                    <p>Observaçoes: <strong>{{produto.observacoes}}</strong></p>\n                    <br>\n                </div>\n            </ion-item>\n            <p>Valor Total: <strong> {{ item.valorTotal | real }}</strong></p>\n        </ion-card-content>\n    </ion-card>\n    <div>\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n    </div>\n</ion-content>\n<tab [pagina]="\'Meus Pedidos\'"></tab>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\meus-pedidos\meus-pedidos.html"*/,
+            selector: 'page-meus-pedidos',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\meus-pedidos\meus-pedidos.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Meus Pedidos</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-card *ngFor="let item of lista" style="border-radius: 10px;">\n        <ion-card-header icon-left>\n            <ion-icon name="cart"></ion-icon>\n            Pedido realizado em <strong>{{ item.dataPedido | date:\'dd/MM/yyyy, HH:mm\' }}</strong>\n        </ion-card-header>\n        <ion-card-content>\n            <p>Status: <strong> {{ item.status}}</strong></p>\n            <ion-item>\n                <p><strong>Produtos:</strong></p>\n                <br>\n                <div *ngFor="let produto of item.itens">\n                    <!-- <td>{{produto.quantidade}}</td>\n                                    <td>{{produto.nomeProd}}</td>\n                                    <td>{{produto.observacoes}}</td> -->\n                    <p>Produto: <strong>{{produto.nomeProd}}</strong></p>\n                    <p>Quantidade: <strong>{{produto.quantidade}}</strong></p>\n                    <!-- <strong>Produto ID: <strong>{{produto.produtoId}}</strong></p> -->\n                    <p>Observaçoes: <strong>{{produto.observacoes}}</strong></p>\n                    <br>\n                </div>\n            </ion-item>\n            <p>Valor Total: <strong> {{ item.valorTotal | real }}</strong></p>\n        </ion-card-content>\n    </ion-card>\n    <div>\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n        <ion-item no-lines style="background-color: transparent !important;"></ion-item>\n    </div>\n</ion-content>\n<tab [pagina]="\'Meus Pedidos\'"></tab>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\meus-pedidos\meus-pedidos.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */],
@@ -519,7 +519,7 @@ var MeusPedidosPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 346:
+/***/ 345:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

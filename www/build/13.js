@@ -1,14 +1,14 @@
 webpackJsonp([13],{
 
-/***/ 312:
+/***/ 311:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdmProdutosPageModule", function() { return AdmProdutosPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__adm_produtos__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__adm_produtos__ = __webpack_require__(338);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,14 +38,14 @@ var AdmProdutosPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 339:
+/***/ 338:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdmProdutosPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_produto_produto__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_produto_produto__ = __webpack_require__(215);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -129,7 +129,7 @@ var AdmProdutosPage = /** @class */ (function () {
     };
     AdmProdutosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-adm-produtos',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\adm-produtos\adm-produtos.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Produtos</ion-title>\n        <ion-buttons right>\n            <button ion-button icon-only (click)="addOrEdit({})">\n                <ion-icon name="add"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list lines *ngIf="!isLoading">\n        <ion-item text-wrap *ngIf="lista.length == 0">\n            Você não tem nenhum produto cadastrado.\n        </ion-item>\n        <ion-item *ngFor="let item of lista" text-wrap (click)="addOrEdit(item)">\n            {{ item.nome }}\n            <ion-note item-end>\n                {{ item.categoriaId.titulo }}\n            </ion-note>\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\adm-produtos\adm-produtos.html"*/,
+            selector: 'page-adm-produtos',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\adm-produtos\adm-produtos.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Produtos</ion-title>\n        <ion-buttons right>\n            <button ion-button icon-only (click)="addOrEdit({})">\n                <ion-icon name="add"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list lines *ngIf="!isLoading">\n        <ion-item text-wrap *ngIf="lista.length == 0">\n            Você não tem nenhum produto cadastrado.\n        </ion-item>\n        <ion-item *ngFor="let item of lista" text-wrap (click)="addOrEdit(item)">\n            {{ item.nome }}\n            <ion-note item-end>\n                {{ item.categoriaId.titulo }}\n            </ion-note>\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\adm-produtos\adm-produtos.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],

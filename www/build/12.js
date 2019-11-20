@@ -1,14 +1,14 @@
 webpackJsonp([12],{
 
-/***/ 314:
+/***/ 313:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CadastroPageModule", function() { return CadastroPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cadastro__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cadastro__ = __webpack_require__(340);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var CadastroPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 341:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47,7 +47,7 @@ var CadastroPageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_usuario_usuario__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_models_usuarioModel__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -191,7 +191,7 @@ var CadastroPage = /** @class */ (function () {
     };
     CadastroPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["m" /* Component */])({
-            selector: 'page-cadastro',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\cadastro\cadastro.html"*/'<ion-content padding class="backImage">\n  <div>\n    <img src="assets/imagens/logo.png" class="logo">\n    <!-- <span>Woosh</span> -->\n  </div>\n  <ion-list no-lines class="list-transparent">\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.nome" type="text" placeholder="Nome"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.email" type="text" placeholder="E-mail"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.cpf" type="tel" placeholder="CPF" #input maxlength="11"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.senha" type="password" placeholder="Senha"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.senhaConfirmacao" type="password" placeholder="Confirmar Senha"></ion-input>\n    </ion-item>\n  </ion-list>\n  <div>\n    <ion-grid>\n      <ion-row>\n        <button ion-button block round color="secondary" (click)="cadastrar()" class=\'botao\'>\n          Cadastrar\n        </button>\n      </ion-row>\n      <ion-row>\n        <button ion-button block outline round color="secondary" (click)="cancelar()" class=\'botao\'>\n          Cancelar\n        </button>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\cadastro\cadastro.html"*/,
+            selector: 'page-cadastro',template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cadastro\cadastro.html"*/'<ion-content padding class="backImage">\n  <div>\n    <img src="assets/imagens/logo.png" class="logo">\n    <!-- <span>Woosh</span> -->\n  </div>\n  <ion-list no-lines class="list-transparent">\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.nome" type="text" placeholder="Nome"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.email" type="text" placeholder="E-mail"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.cpf" type="tel" placeholder="CPF" #input maxlength="11"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.senha" type="password" placeholder="Senha"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-input [(ngModel)]="usuario.senhaConfirmacao" type="password" placeholder="Confirmar Senha"></ion-input>\n    </ion-item>\n  </ion-list>\n  <div>\n    <ion-grid>\n      <ion-row>\n        <button ion-button block round color="secondary" (click)="cadastrar()" class=\'botao\'>\n          Cadastrar\n        </button>\n      </ion-row>\n      <ion-row>\n        <button ion-button block outline round color="secondary" (click)="cancelar()" class=\'botao\'>\n          Cancelar\n        </button>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cadastro\cadastro.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["l" /* NavParams */],

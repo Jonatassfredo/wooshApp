@@ -23,15 +23,15 @@ export class LoginPage {
       this.form.email,
       this.form.senha
     );
-    console.log('retorno login', result.data.usuario.ativo);
-    if (result.data.usuario.ativo !== false) {
-      if (result.success) {
+    if (result.success) {
+      console.log('retorno login', result.data.usuario.ativo);
+      if (result.data.usuario.ativo !== false) {
         UsuarioProvider.RegisterLogin(result.data);
         this.navCtrl.setRoot("CategoriaPage");
       }
-    }
-    else {
-      this.alertSrv.toast("Usuário bloqueado, entre em contato com o estabelecimento", "bottom");
+      else {
+        this.alertSrv.toast("Usuário bloqueado, entre em contato com o estabelecimento", "bottom");
+      }
     }
     // console.log(result);
   }

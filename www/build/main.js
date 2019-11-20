@@ -6,7 +6,7 @@ webpackJsonp([16],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AlertProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -151,35 +151,35 @@ webpackEmptyAsyncContext.id = 122;
 
 var map = {
 	"../pages/adm-categoria/adm-categoria.module": [
-		309,
+		308,
 		8
 	],
 	"../pages/adm-categorias/adm-categorias.module": [
-		310,
+		309,
 		14
 	],
 	"../pages/adm-produto/adm-produto.module": [
-		311,
+		310,
 		6
 	],
 	"../pages/adm-produtos/adm-produtos.module": [
-		312,
+		311,
 		13
 	],
 	"../pages/cad-endereco-entrega/cad-endereco-entrega.module": [
-		313,
+		312,
 		7
 	],
 	"../pages/cadastro/cadastro.module": [
-		314,
+		313,
 		12
 	],
 	"../pages/carrinho/carrinho.module": [
-		315,
+		314,
 		0
 	],
 	"../pages/categoria/categoria.module": [
-		317,
+		315,
 		5
 	],
 	"../pages/list-enderecos-entrega/list-enderecos-entrega.module": [
@@ -187,31 +187,31 @@ var map = {
 		11
 	],
 	"../pages/login/login.module": [
-		318,
+		317,
 		10
 	],
 	"../pages/mensagens/mensagens.module": [
-		319,
+		318,
 		15
 	],
 	"../pages/meus-pedidos/meus-pedidos.module": [
-		320,
+		319,
 		2
 	],
 	"../pages/minha-conta/minha-conta.module": [
-		321,
+		320,
 		4
 	],
 	"../pages/produtos/produtos.module": [
-		322,
+		321,
 		1
 	],
 	"../pages/tab-categoria/tab-categoria.module": [
-		323,
+		322,
 		9
 	],
 	"../pages/visualizar-produto/visualizar-produto.module": [
-		324,
+		323,
 		3
 	]
 };
@@ -237,7 +237,7 @@ module.exports = webpackAsyncContext;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SpinnerProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -285,7 +285,7 @@ var SpinnerProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NetworkProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -329,18 +329,18 @@ var NetworkProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 219:
+/***/ 213:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CarrinhoProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__http_http__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_models_CarrinhoItemModel__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_models_CarrinhoItemModel__ = __webpack_require__(277);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_models_carrinhoModel__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_models_carrinhoModel__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_helpers_configHelper__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_models_usuarioModel__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__usuario_usuario__ = __webpack_require__(37);
@@ -540,14 +540,14 @@ var CarrinhoProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 220:
+/***/ 214:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CameraProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_camera__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -617,7 +617,7 @@ var CameraProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 221:
+/***/ 215:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -710,7 +710,7 @@ var ProdutoProvider = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 222:
+/***/ 216:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -761,19 +761,19 @@ var EnderecoEntregaProvider = /** @class */ (function (_super) {
 
 /***/ }),
 
-/***/ 223:
+/***/ 217:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MensagensPage; });
 /* unused harmony export snapshotToArray */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_models_usuarioModel__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_Firebase__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_Firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_Firebase__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_firebase__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_firebase__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_usuario_usuario__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__categoria_categoria__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__categoria_categoria__ = __webpack_require__(219);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -799,7 +799,7 @@ var MensagensPage = /** @class */ (function () {
         this.navParams = navParams;
         this.dataSala = { nome: "" };
         this.nicknameModel = new __WEBPACK_IMPORTED_MODULE_2__app_models_usuarioModel__["a" /* UsuarioModel */]();
-        this.ref = __WEBPACK_IMPORTED_MODULE_3_Firebase__["database"]().ref("salas/" + this.nicknameModel._id);
+        this.ref = __WEBPACK_IMPORTED_MODULE_3_firebase__["database"]().ref("salas/" + this.nicknameModel._id);
         this.dataNick = { nickname: "" };
         this.data = { type: "", nickname: "", mensagem: "" };
         this.chats = [];
@@ -817,7 +817,7 @@ var MensagensPage = /** @class */ (function () {
             console.log(_this.salas);
         });
         console.log("id do cara", this.nicknameModel._id);
-        __WEBPACK_IMPORTED_MODULE_3_Firebase__["database"]()
+        __WEBPACK_IMPORTED_MODULE_3_firebase__["database"]()
             .ref("chats/mensagens/" + this.nicknameModel._id)
             .on("value", function (resp) {
             _this.chats = [];
@@ -835,7 +835,7 @@ var MensagensPage = /** @class */ (function () {
             console.log("mensagen vazia");
             return;
         }
-        var newData = __WEBPACK_IMPORTED_MODULE_3_Firebase__["database"]()
+        var newData = __WEBPACK_IMPORTED_MODULE_3_firebase__["database"]()
             .ref("chats/mensagens/" + this.nicknameModel._id)
             .push();
         newData.set({
@@ -856,7 +856,7 @@ var MensagensPage = /** @class */ (function () {
     ], MensagensPage.prototype, "content", void 0);
     MensagensPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-mensagens",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\mensagens\mensagens.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Mensagens</ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only (click)="sair()">\n                <ion-icon name="exit"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-list>\n        <ion-item *ngFor="let chat of chats" no-lines>\n            <div class="chat-status" text-center *ngIf="chat.mensagentype===\'join\'||chat.type===\'sair\';else message">\n                <span class="chat-date">{{chat.sendDate | date:\'short\'}}</span>\n                <span class="chat-content-center">{{chat.mensagem}}</span>\n            </div>\n            <ng-template #message>\n                <div class="alinhaMsg">\n                    <ion-card class="myMessage" text-right *ngIf="chat.type === \'userMessage\'">\n                        <ion-card-header>\n                            <span class="msg-name">\n                                <strong>Cliente</strong>\n                                em\n                            </span>\n                            <span class="msg-date">{{chat.sendDate | date:\'dd/MM/yyyy, HH:mm\'}}</span>\n                        </ion-card-header>\n                        <ion-card-content>\n                            <div class="chat-message" text-right>\n                                <div class="right-bubble">\n                                    <p class="msg-text" text-wrap>\n                                        {{chat.mensagem}}\n                                    </p>\n                                </div>\n                            </div>\n                        </ion-card-content>\n                    </ion-card>\n                </div>\n                <div class="alinhaMsgOp">\n                    <ion-card class="opMessage" text-left *ngIf="chat.type === \'operadorMessage\'">\n                        <ion-card-header>\n                            <span class="msg-name">\n                                <strong>Operador</strong>\n                                em\n                            </span>\n                            <span class="msg-date">{{chat.sendDate | date:\'dd/MM/yyyy, HH:mm\'}}</span>\n                        </ion-card-header>\n                        <ion-card-content>\n                            <div class="chat-message" text-left>\n                                <div class="right-bubble">\n                                    <p class="msg-text" text-wrap>\n                                        {{chat.mensagem}}\n                                    </p>\n                                </div>\n                            </div>\n                        </ion-card-content>\n                    </ion-card>\n                </div>\n            </ng-template>\n        </ion-item>\n    </ion-list>\n</ion-content>\n\n<ion-footer>\n    <ion-grid>\n        <ion-row>\n            <ion-col col-10>\n                <ion-input type="text" placeholder="Escreva uma mensagem" [(ngModel)]="data.mensagem" name="mensagem"\n                    class="fontsize">\n                </ion-input>\n            </ion-col>\n            <ion-col col-2 (click)="enviarMensagem()" class="iconeMsg">\n                <div>\n                    <ion-icon color="primary" name="paper-plane"></ion-icon>\n                </div>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-footer>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\mensagens\mensagens.html"*/
+            selector: "page-mensagens",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\mensagens\mensagens.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Mensagens</ion-title>\n        <ion-buttons end>\n            <button ion-button icon-only (click)="sair()">\n                <ion-icon name="exit"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-list>\n        <ion-item *ngFor="let chat of chats" no-lines>\n            <div class="chat-status" text-center *ngIf="chat.mensagentype===\'join\'||chat.type===\'sair\';else message">\n                <span class="chat-date">{{chat.sendDate | date:\'short\'}}</span>\n                <span class="chat-content-center">{{chat.mensagem}}</span>\n            </div>\n            <ng-template #message>\n                <div class="alinhaMsg">\n                    <ion-card class="myMessage" text-right *ngIf="chat.type === \'userMessage\'">\n                        <ion-card-header>\n                            <span class="msg-name">\n                                <strong>Cliente</strong>\n                                em\n                            </span>\n                            <span class="msg-date">{{chat.sendDate | date:\'dd/MM/yyyy, HH:mm\'}}</span>\n                        </ion-card-header>\n                        <ion-card-content>\n                            <div class="chat-message" text-right>\n                                <div class="right-bubble">\n                                    <p class="msg-text" text-wrap>\n                                        {{chat.mensagem}}\n                                    </p>\n                                </div>\n                            </div>\n                        </ion-card-content>\n                    </ion-card>\n                </div>\n                <div class="alinhaMsgOp">\n                    <ion-card class="opMessage" text-left *ngIf="chat.type === \'operadorMessage\'">\n                        <ion-card-header>\n                            <span class="msg-name">\n                                <strong>Operador</strong>\n                                em\n                            </span>\n                            <span class="msg-date">{{chat.sendDate | date:\'dd/MM/yyyy, HH:mm\'}}</span>\n                        </ion-card-header>\n                        <ion-card-content>\n                            <div class="chat-message" text-left>\n                                <div class="right-bubble">\n                                    <p class="msg-text" text-wrap>\n                                        {{chat.mensagem}}\n                                    </p>\n                                </div>\n                            </div>\n                        </ion-card-content>\n                    </ion-card>\n                </div>\n            </ng-template>\n        </ion-item>\n    </ion-list>\n</ion-content>\n\n<ion-footer>\n    <ion-grid>\n        <ion-row>\n            <ion-col col-10>\n                <ion-input type="text" placeholder="Escreva uma mensagem" [(ngModel)]="data.mensagem" name="mensagem"\n                    class="fontsize">\n                </ion-input>\n            </ion-col>\n            <ion-col col-2 (click)="enviarMensagem()" class="iconeMsg">\n                <div>\n                    <ion-icon color="primary" name="paper-plane"></ion-icon>\n                </div>\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n</ion-footer>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\mensagens\mensagens.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
     ], MensagensPage);
@@ -876,7 +876,7 @@ var snapshotToArray = function (snapshot) {
 
 /***/ }),
 
-/***/ 224:
+/***/ 218:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -895,14 +895,14 @@ var CarrinhoModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 225:
+/***/ 219:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategoriaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_categoria_categoria__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_helpers_configHelper__ = __webpack_require__(30);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1020,7 +1020,7 @@ var CategoriaPage = /** @class */ (function () {
     };
     CategoriaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: "page-categoria",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\categoria\categoria.html"*/'<ion-content no-padding>\n    <div class="admin">\n        <button ion-button icon-only clear color="light" (click)="adminOptions()">\n            <!-- <ion-icon name="settings"></ion-icon> -->\n        </button>\n    </div>\n    <div class="blur"></div>\n    <p class="chamada">Categorias</p>\n    <div class="categoria" *ngFor="let item of categorias | orderBy:\'titulo\'" (click)="selecionarProduto(item)"\n        tappable>\n        <div class="imagem" [ngStyle]="{\'background-image\': \'url(\' + item.foto + \')\'}">\n\n        </div>\n        <p>\n            {{item.titulo}}\n        </p>\n    </div>\n\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\categoria\categoria.html"*/
+            selector: "page-categoria",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\categoria\categoria.html"*/'<ion-content no-padding>\n    <div class="admin">\n        <button ion-button icon-only clear color="light" (click)="adminOptions()">\n            <!-- <ion-icon name="settings"></ion-icon> -->\n        </button>\n    </div>\n    <div class="blur"></div>\n    <p class="chamada">Categorias</p>\n    <div class="categoria" *ngFor="let item of categorias | orderBy:\'titulo\'" (click)="selecionarProduto(item)"\n        tappable>\n        <div class="imagem" [ngStyle]="{\'background-image\': \'url(\' + item.foto + \')\'}">\n\n        </div>\n        <p>\n            {{item.titulo}}\n        </p>\n    </div>\n\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\categoria\categoria.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */],
@@ -1035,13 +1035,13 @@ var CategoriaPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 226:
+/***/ 220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(227);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(240);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1049,32 +1049,32 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 246:
+/***/ 240:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_splash_screen__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_onesignal__ = __webpack_require__(305);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(306);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_spinner_spinner__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_alert_alert__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_platform_browser__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_network__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_network__ = __webpack_require__(307);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__node_modules_angular_common_http__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_http_http__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_network_network__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_usuario_usuario__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_categoria_categoria__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_camera_camera__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_produto_produto__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_carrinho_carrinho__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_endereco_endereco__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_mensagens_mensagens__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_camera_camera__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_produto_produto__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_carrinho_carrinho__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_endereco_endereco__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_mensagens_mensagens__ = __webpack_require__(217);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1123,8 +1123,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/cad-endereco-entrega/cad-endereco-entrega.module#CadEnderecoEntregaPageModule', name: 'CadEnderecoEntregaPage', segment: 'cad-endereco-entrega', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/carrinho/carrinho.module#CarrinhoPageModule', name: 'CarrinhoPage', segment: 'carrinho', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/list-enderecos-entrega/list-enderecos-entrega.module#ListEnderecosEntregaPageModule', name: 'ListEnderecosEntregaPage', segment: 'list-enderecos-entrega', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/categoria/categoria.module#CategoriaPageModule', name: 'CategoriaPage', segment: 'categoria', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/list-enderecos-entrega/list-enderecos-entrega.module#ListEnderecosEntregaPageModule', name: 'ListEnderecosEntregaPage', segment: 'list-enderecos-entrega', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/mensagens/mensagens.module#MensagensPageModule', name: 'MensagensPage', segment: 'mensagens', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/meus-pedidos/meus-pedidos.module#MeusPedidosPageModule', name: 'MeusPedidosPage', segment: 'meus-pedidos', priority: 'low', defaultHistory: [] },
@@ -1164,7 +1164,7 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 283:
+/***/ 277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1217,10 +1217,10 @@ var ConfigHelper = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_usuario_usuario__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_firebase__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1260,7 +1260,7 @@ var MyApp = /** @class */ (function () {
         __WEBPACK_IMPORTED_MODULE_5_firebase__["initializeApp"](config);
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */],
@@ -1601,5 +1601,5 @@ var ProviderBase = /** @class */ (function () {
 
 /***/ })
 
-},[226]);
+},[220]);
 //# sourceMappingURL=main.js.map

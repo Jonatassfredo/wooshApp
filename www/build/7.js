@@ -1,14 +1,14 @@
 webpackJsonp([7],{
 
-/***/ 313:
+/***/ 312:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CadEnderecoEntregaPageModule", function() { return CadEnderecoEntregaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cad_endereco_entrega__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cad_endereco_entrega__ = __webpack_require__(339);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var CadEnderecoEntregaPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 335:
+/***/ 334:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53,15 +53,15 @@ var EnderecoEntregaModel = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 340:
+/***/ 339:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadEnderecoEntregaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_models_enderecoModel__ = __webpack_require__(335);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_endereco_endereco__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_models_enderecoModel__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_endereco_endereco__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_alert_alert__ = __webpack_require__(108);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -211,7 +211,7 @@ var CadEnderecoEntregaPage = /** @class */ (function () {
     };
     CadEnderecoEntregaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-cad-endereco-entrega",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\cad-endereco-entrega\cad-endereco-entrega.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Endereço</ion-title>\n        <ion-buttons right>\n            <button ion-button clear (click)="salvar()">\n                Salvar\n            </button>\n            <button *ngIf="endereco._id" ion-button icon-only (click)="excluir()">\n                <ion-icon name="trash"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list no-lines>\n        <ion-item>\n            <ion-label floating>Cidade</ion-label>\n            <ion-input [(ngModel)]="endereco.cidade" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>UF</ion-label>\n            <ion-select [(ngModel)]="endereco.uf" cancelText="Cancelar" okText="Ok">\n                <ion-option value="{{ item }}" *ngFor="let item of UF">\n                    {{ item }}\n                </ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>CEP</ion-label>\n            <ion-input [(ngModel)]="endereco.cep" type="number"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Bairro</ion-label>\n            <ion-input [(ngModel)]="endereco.bairro" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Rua</ion-label>\n            <ion-input [(ngModel)]="endereco.rua" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Número</ion-label>\n            <ion-input [(ngModel)]="endereco.numero" type="number"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Ponto de Referência</ion-label>\n            <ion-textarea [(ngModel)]="endereco.pontoReferencia" rows="2"></ion-textarea>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Orientações</ion-label>\n            <ion-textarea [(ngModel)]="endereco.orientacoes" rows="4"></ion-textarea>\n        </ion-item>\n\n    </ion-list>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\cad-endereco-entrega\cad-endereco-entrega.html"*/
+            selector: "page-cad-endereco-entrega",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cad-endereco-entrega\cad-endereco-entrega.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Endereço</ion-title>\n        <ion-buttons right>\n            <button ion-button clear (click)="salvar()">\n                Salvar\n            </button>\n            <button *ngIf="endereco._id" ion-button icon-only (click)="excluir()">\n                <ion-icon name="trash"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list no-lines>\n        <ion-item>\n            <ion-label floating>Cidade</ion-label>\n            <ion-input [(ngModel)]="endereco.cidade" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>UF</ion-label>\n            <ion-select [(ngModel)]="endereco.uf" cancelText="Cancelar" okText="Ok">\n                <ion-option value="{{ item }}" *ngFor="let item of UF">\n                    {{ item }}\n                </ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>CEP</ion-label>\n            <ion-input [(ngModel)]="endereco.cep" type="number"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Bairro</ion-label>\n            <ion-input [(ngModel)]="endereco.bairro" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Rua</ion-label>\n            <ion-input [(ngModel)]="endereco.rua" type="text"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Número</ion-label>\n            <ion-input [(ngModel)]="endereco.numero" type="number"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Ponto de Referência</ion-label>\n            <ion-textarea [(ngModel)]="endereco.pontoReferencia" rows="2"></ion-textarea>\n        </ion-item>\n        <ion-item>\n            <ion-label floating>Orientações</ion-label>\n            <ion-textarea [(ngModel)]="endereco.orientacoes" rows="4"></ion-textarea>\n        </ion-item>\n\n    </ion-list>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\cad-endereco-entrega\cad-endereco-entrega.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],

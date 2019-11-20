@@ -7,8 +7,8 @@ webpackJsonp([11],{
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListEnderecosEntregaPageModule", function() { return ListEnderecosEntregaPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_enderecos_entrega__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_enderecos_entrega__ = __webpack_require__(342);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,14 +38,14 @@ var ListEnderecosEntregaPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 343:
+/***/ 342:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListEnderecosEntregaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_endereco_endereco__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_endereco_endereco__ = __webpack_require__(216);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -122,7 +122,7 @@ var ListEnderecosEntregaPage = /** @class */ (function () {
     };
     ListEnderecosEntregaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-list-enderecos-entrega",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\list-enderecos-entrega\list-enderecos-entrega.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Endereços de Entrega</ion-title>\n        <ion-buttons right>\n            <button ion-button icon-only (click)="addOrEdit({})">\n        <ion-icon name="add"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list lines>\n        <ion-item text-wrap *ngIf="lista.length == 0">\n            Você não possui endereço de entrega cadastrado.\n        </ion-item>\n        <ion-item *ngFor="let item of lista" text-wrap (click)="addOrEdit(item)">\n            Rua {{item.rua}}, {{item.numero}}, Bairro {{item.bairro}}\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\teste - 20\src\pages\list-enderecos-entrega\list-enderecos-entrega.html"*/
+            selector: "page-list-enderecos-entrega",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\list-enderecos-entrega\list-enderecos-entrega.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Endereços de Entrega</ion-title>\n        <ion-buttons right>\n            <button ion-button icon-only (click)="addOrEdit({})">\n        <ion-icon name="add"></ion-icon>\n      </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n<ion-content no-padding>\n    <ion-list lines>\n        <ion-item text-wrap *ngIf="lista.length == 0">\n            Você não possui endereço de entrega cadastrado.\n        </ion-item>\n        <ion-item *ngFor="let item of lista" text-wrap (click)="addOrEdit(item)">\n            Rua {{item.rua}}, {{item.numero}}, Bairro {{item.bairro}}\n        </ion-item>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\list-enderecos-entrega\list-enderecos-entrega.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */],
