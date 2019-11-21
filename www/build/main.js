@@ -180,7 +180,7 @@ var map = {
 	],
 	"../pages/categoria/categoria.module": [
 		315,
-		5
+		3
 	],
 	"../pages/list-enderecos-entrega/list-enderecos-entrega.module": [
 		316,
@@ -200,7 +200,7 @@ var map = {
 	],
 	"../pages/minha-conta/minha-conta.module": [
 		320,
-		4
+		5
 	],
 	"../pages/produtos/produtos.module": [
 		321,
@@ -212,7 +212,7 @@ var map = {
 	],
 	"../pages/visualizar-produto/visualizar-produto.module": [
 		323,
-		3
+		4
 	]
 };
 function webpackAsyncContext(req) {
@@ -1020,7 +1020,7 @@ var CategoriaPage = /** @class */ (function () {
     };
     CategoriaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: "page-categoria",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\categoria\categoria.html"*/'<ion-content no-padding>\n    <div class="admin">\n        <button ion-button icon-only clear color="light" (click)="adminOptions()">\n            <!-- <ion-icon name="settings"></ion-icon> -->\n        </button>\n    </div>\n    <div class="blur"></div>\n    <p class="chamada">Categorias</p>\n    <div class="categoria" *ngFor="let item of categorias | orderBy:\'titulo\'" (click)="selecionarProduto(item)"\n        tappable>\n        <div class="imagem" [ngStyle]="{\'background-image\': \'url(\' + item.foto + \')\'}">\n\n        </div>\n        <p>\n            {{item.titulo}}\n        </p>\n    </div>\n\n</ion-content>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\categoria\categoria.html"*/
+            selector: "page-categoria",template:/*ion-inline-start:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\categoria\categoria.html"*/'<ion-content no-padding>\n    <div class="admin">\n        <button ion-button icon-only clear color="light" (click)="adminOptions()">\n            <!-- <ion-icon name="settings"></ion-icon> -->\n        </button>\n    </div>\n    <div class="blur"></div>\n    <p class="chamada">Categorias</p>\n    <div class="categoria" *ngFor="let item of categorias | orderBy:\'titulo\'" (click)="selecionarProduto(item)"\n        tappable>\n        <div class="imagem" [ngStyle]="{\'background-image\': \'url(\' + item.foto + \')\'}">\n\n        </div>\n        <p>\n            {{item.titulo}}\n        </p>\n    </div>\n\n</ion-content>\n\n<tab [pagina]="\'Categoria\'"></tab>'/*ion-inline-end:"E:\Desenvolvimento\TCC\1 - Projeto\Mobile\WooshApp\src\pages\categoria\categoria.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["k" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavParams */],
